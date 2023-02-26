@@ -1,0 +1,15 @@
+@media screen and (max-width: 1345px) {
+    .homeContainer {
+        .actions {
+            height: 90%;
+            flex-direction: column;
+            top: 0;
+            position: relative;
+            .button {
+                width: 80%;
+                padding: 40px;
+                margin: 20px;
+            }
+        }
+    }
+}

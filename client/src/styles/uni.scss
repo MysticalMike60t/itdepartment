@@ -1,0 +1,154 @@
+@import "vars.scss";
+@import "header.scss";
+.root {
+    overflow: hidden;
+}
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    // width: calc(100vw - $header-width);
+    width: 100vw;
+    height: 100vh;
+    //height: calc(100vh - $header-height);
+    // left: $header-width;
+    //top: $header-height;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background: $home-background;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .center-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        // border-radius: 400px;
+        left: 0;
+        top: 0;
+        // margin: 5vh 0 0 0;
+        padding: 0;
+        background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/jgfk2q.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        h1 {
+            display: block;
+            font-size: 10rem;
+            letter-spacing: 10px;
+            color: $light-1;
+            left: 0;
+            top: 0;
+            margin: 4%;
+            padding: 0;
+            position: relative;
+        }
+        h2 {
+            display: block;
+            font-size: 2rem;
+            color: $light-1;
+            left: 0;
+            top: 0;
+            margin: 4%;
+            padding: 0;
+            position: relative;
+        }
+        /*
+        .bg {
+            $w_h: 100vh;
+            height: $w_h;
+            width: $w_h;
+            right: -20vw;
+            top: 8vh;
+            background: linear-gradient(45deg, $primary-1, $primary-2);
+            padding: 0;
+            margin: 0;
+            z-index: 99;
+            border-radius: 30% 70% 70% 30% / 36% 71% 29% 64% ;
+            position: absolute;
+        }
+        */
+    }
+    .actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 200px;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        position: relative;
+        button {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: $dark-1;
+            width: 30vw;
+            min-width: 150px;
+            height: 75px;
+            left: 0;
+            top: 0;
+            padding: 0;
+            margin: 0 10vw 0 10vw;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            background: rgb(255,255,255);
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+            position: relative;
+            cursor: pointer;
+            transition: 200ms ease all;
+            &:hover {
+                color: $primary-1;
+                text-shadow: 0 0 30px 0 $primary-1-light;
+                background: transparent;
+                box-shadow: 0 0 0 0 transparent;
+                &::after, &::before {
+                    transform: scaleX(1);
+                }
+            }
+            &::before,&::after {
+                content: "";
+                width: 100%;
+                height: 3px;
+                left: 0;
+                padding: 0;
+                margin: 0;
+                background: $dark-1;
+                position: absolute;
+                transition: 200ms ease-in;
+                transform: scaleX(0);
+            }
+            &::before {
+                top: 0;
+                transform-origin: left;
+            }
+            &::after {
+                bottom: 0;
+                transform-origin: right;
+            }
+        }
+    }
+    /*
+    .center-card {
+        color: $primary-1;
+        filter: drop-shadow(0 10px 10px rgba(0,0,0,0.1));
+        width: 200px;
+        height: 400px;
+        left: 80%;
+        top: 35vh;
+        padding: 0;
+        margin: 0;
+        transform: translate(-50%, 0);
+        position: absolute;
+    }
+    */
+}

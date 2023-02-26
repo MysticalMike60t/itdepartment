@@ -1,0 +1,51 @@
+.inst {
+    .title {
+        color: $primary-1;
+        font-size: 3rem;
+    }
+    .uniform-card {
+        text-decoration: none;
+        color: $dark-1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 100px;
+        margin-top: 40px;
+        padding: 20px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+        border-radius: 20px;
+        background: rgba(255,255,255,1);
+        outline: 2px solid transparent;
+        border: none;
+        position: relative;
+        transition: 200ms ease all;
+        cursor: pointer;
+        h3 {
+            color: $primary-1;
+            font-size: 1.5rem;
+            margin: 20px;
+            transition: 100ms ease all;
+        }
+        p {
+            color: $primary-1-dark;
+            font-weight: 500;
+            font-size: 2rem;
+            margin: 20px;
+            span {
+                color: $primary-yellow;
+            }
+        }
+        &:hover {
+            outline: 2px solid $primary-1;
+            background: $primary-1;
+            h3 {
+                color: $primary-yellow;
+            }
+            p {
+                color: white;
+            }
+        }
+    }
+}

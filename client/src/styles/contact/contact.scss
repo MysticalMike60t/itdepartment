@@ -1,0 +1,25 @@
+.contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(250,250,250);
+    .info-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h4 {
+            $color: rgb(20,20,20);
+            font-weight: 600;
+            padding: 10px;
+            font-size: 4rem;
+            a {
+                text-decoration: none;
+                color: $color;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+@import "media.scss";

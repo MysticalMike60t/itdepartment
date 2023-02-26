@@ -1,0 +1,9 @@
+<svg width="1001" height="1000" viewBox="0 0 1001 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1001" height="1000"/>
+<path d="M100.5 100V900" stroke="#A71624" stroke-width="200" stroke-linecap="square"/>
+<path d="M101 100L901 100" stroke="#A71624" stroke-width="200" stroke-linecap="square"/>
+<path d="M100 900H700" stroke="#A71624" stroke-width="200" stroke-linecap="square"/>
+<path d="M700 900V500" stroke="#A71624" stroke-width="200" stroke-linecap="square"/>
+<path d="M901 500H700" stroke="#A71624" stroke-width="200" stroke-linecap="square"/>
+<path d="M501 500H700" stroke="#A71624" stroke-width="200" stroke-linecap="square"/>
+</svg>

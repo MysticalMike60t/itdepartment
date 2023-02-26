@@ -1,0 +1,11 @@
+@media screen and (max-width: 910px) {
+    .programsContainer {
+        .cards-wrapper {
+            flex-direction: column;
+            align-content:center;
+            .card {
+                justify-content: flex-start;
+            }
+        }
+    }
+}

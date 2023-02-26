@@ -1,0 +1,52 @@
+@import "vars.scss";
+@import "header/header.scss";
+.root {
+    overflow: hidden;
+}
+body {
+    background: rgb(30,30,30);
+}
+.container {
+    width: 100vw;
+    height: calc(100vh - $header-height);
+    left: 0;
+    top: $header-height;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgb(250,250,250);
+    position: absolute;
+    &::-webkit-scrollbar {
+        width: 10px;
+        background: $light-1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $primary-1-dark;
+    }
+}
+.nopage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left:0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    .link {
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 1rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+@import "../home/home.scss";
+@import "../programs/programs.scss";
+@import "../about/about.scss";
+@import "../contact/contact.scss";
+
+@import "./dark.scss";

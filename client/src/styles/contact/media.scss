@@ -1,0 +1,41 @@
+@media screen and (max-width: 910px) {
+    .info-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .info-wrapper {
+        gap: 10vh;
+        h4 {
+            font-size: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .info-wrapper {
+        h4 {
+            text-align: center;
+            border-radius: 50px;
+            outline: 2px solid transparent;
+            width: 90vw;
+            height: auto;
+            position: relative;
+            background: rgb(255,255,255);
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+            cursor: pointer;
+            &:hover {
+                outline: 2px solid $primary-1;
+            }
+            span {
+                display: none;
+            }
+            a {
+                display: none;
+            }
+        }
+    }
+}

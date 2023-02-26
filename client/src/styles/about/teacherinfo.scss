@@ -1,0 +1,44 @@
+.teacherInfo-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        margin: 0 0 10vh 0;
+        font-size: 4rem;
+    }
+    .teacherInfo {
+        $w: 300px;
+        width: $w;
+        height: $w;
+        border-radius: 50px;
+        background: transparent;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    p {
+        text-align: center;
+        h2 {
+            margin: 20px 0 20px 0;
+            font-size: 2rem;
+        }
+        a {
+            font-weight: 600;
+            color: $dark-1;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: 100ms ease all;
+            &:hover {
+                color: $primary-1;
+                text-decoration: underline;
+            }
+        }
+        p {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 25px;
+        }
+    }
+}

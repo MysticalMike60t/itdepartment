@@ -1,0 +1,154 @@
+$front-txt-color: $light-1;
+$background: $primary-1;
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    // width: calc(100vw - $header-width);
+    width: 100vw;
+    height: 100vh;
+    //height: calc(100vh - $header-height);
+    // left: $header-width;
+    //top: $header-height;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background: $home-background;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .bg {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 90;
+        position: absolute;
+        overflow: hidden;
+        filter: brightness(20%);
+        video {
+            width: 100%;
+            position: absolute;
+        }
+    }
+    .center-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        // border-radius: 400px;
+        left: 0;
+        top: 0;
+        // margin: 5vh 0 0 0;
+        padding: 0;
+        //background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../../assets/videos/Pexels Videos 2278095.mp4");
+        //background-position: center;
+        //background-repeat: no-repeat;
+        //background-size: cover;
+        // background: $primary-1;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        z-index: 92;
+        h1 {
+            display: block;
+            font-size: 10rem;
+            letter-spacing: 10px;
+            color: $front-txt-color;
+            left: 0;
+            top: 0;
+            margin: 4%;
+            padding: 0;
+            z-index: 93;
+            position: relative;
+        }
+        h2 {
+            display: block;
+            font-size: 2rem;
+            color: $front-txt-color;
+            left: 0;
+            top: 0;
+            margin: 4%;
+            padding: 0;
+            z-index: 93;
+            position: relative;
+        }
+        .scroll {
+            color: $front-txt-color;
+            font-size: 10rem;
+            bottom: 0;
+            text-shadow: 0 0 10px 10px rgba(0,0,0,1);
+            position: relative;
+            z-index: 93;
+            animation: scrollIndicator 2.5s ease infinite;
+        }
+        @keyframes scrollIndicator {
+            0% {
+                transform: translate(0);
+            }
+            25% {
+                transform: translateY(-10%);
+            }
+            50% {
+                transform: translateY(-10%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    }
+    .actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 200px;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        background: $light-1;
+        position: relative;
+        z-index: 91;
+        .button {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: $dark-1;
+            width: 30vw;
+            min-width: 150px;
+            height: 75px;
+            left: 0;
+            top: 0;
+            padding: 0;
+            margin: 0 10vw 0 10vw;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            background: rgb(255,255,255);
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+            position: relative;
+            cursor: pointer;
+            transition: 200ms ease all;
+            overflow: hidden;
+            z-index: inherit;
+            &:hover {
+                color: $primary-1;
+                text-shadow: 0 0 30px 0 $primary-1-light;
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px 0 rgba(0,0,0,0.1);
+                &::after, &::before {
+                    transform: scaleX(1);
+                }
+            }
+            span {
+                z-index: 2;
+            }
+        }
+    }
+}
+@import "./media.scss";

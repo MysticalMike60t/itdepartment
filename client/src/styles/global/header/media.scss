@@ -1,0 +1,31 @@
+@media screen and (max-width: 790px) {
+    .headerContainer {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        .logo {
+            display: none;
+        }
+        ul {
+            justify-content: center;
+            div {
+                li {
+                    padding: 0;
+                    margin: 10px;
+                    .headerNavigationLink {
+                        padding: 0;
+                        margin: 0 0 0 0;
+                        .icon {
+                            font-size: 4rem;
+                            display: block;
+                        }
+                        div {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

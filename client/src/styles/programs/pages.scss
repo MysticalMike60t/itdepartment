@@ -1,0 +1,33 @@
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    .text-wrapper {
+        background: rgb(255,255,255);
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+        border-radius: 20px;
+        margin-bottom: 30px;
+        padding: 30px;
+        transition: 100ms ease all;
+        &:hover {
+            $h: 10px;
+            transform: translateY(calc(($h / 2)*-1));
+            box-shadow: 0 $h 10px 0 rgba(0,0,0,0.05);
+        }
+        h1 {
+            margin: 0 0 20px 0;
+        }
+    }
+}
+i {
+    sup {
+        .i {
+            text-decoration: none;
+            padding: 2.5px;
+            &:hover {
+                color: $primary-1;
+            }
+        }
+    }
+}
