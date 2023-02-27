@@ -3,6 +3,9 @@
 ### Grasso Tech's IT Department Website
 ## Made by: Caden Finkelstein
 
+## Dependencies:
+* ### NODE JS
+
 ## Steps to run locally:
 * ```cd client```
 * ```npm i```
