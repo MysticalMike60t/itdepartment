@@ -1,4 +1,4 @@
-<p align="center">
+<div align="center">
 <h1>IT Department Website</h1>
 
 <h3>Grasso Tech's IT Department Website</h3>
@@ -56,4 +56,4 @@
             </ul>
         </li>
     </ul>
-</p>
+</div>
