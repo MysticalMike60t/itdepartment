@@ -4,20 +4,20 @@
 ## Made by: Caden Finkelstein
 
 ## Steps to run locally:
-* `cd client`
-* `npm i`
-* `npm start`
+* ```cd client```
+* ```npm i```
+* ```npm start```
 
 ## Command to run on Netlify (for build)
-* `CI= npm run build`
+* ```CI= npm run build```
 
 ## Made using:
-* *** Languages: ***
+* <b>Languages:</b>
     - Javascript
     - CSS
     - HTML
     - JSON
     - SVG
-* *** Compilers: ***
+* <b>Compilers:</b>
     - React
     - SCSS
