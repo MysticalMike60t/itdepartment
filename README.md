@@ -8,7 +8,7 @@
         <a href="https://nodejs.org/en/">NODE JS</a>
     </li>
 </ul>
-<h2>Steps to run locally:</h2>
+<h2>Steps to run locally in CMD, Terminal, Bash, etc:</h2>
 <ul>
     <li>
         <code>cd client</code>
