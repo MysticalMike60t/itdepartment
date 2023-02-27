@@ -12,12 +12,12 @@
 * `CI= npm run build`
 
 ## Made using:
-* # Languages:
+* *** Languages: ***
     - Javascript
     - CSS
     - HTML
     - JSON
     - SVG
-* # Compilers:
+* *** Compilers: ***
     - React
     - SCSS
