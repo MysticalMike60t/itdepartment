@@ -18,6 +18,7 @@
     - HTML
     - JSON
     - SVG
-* <b>Compilers:</b>
+* <b>Libraries:</b>
     - React
-    - SCSS
+* <b>Preprocessing:</b>
+    - SCSS/SASS
