@@ -12,7 +12,7 @@
 </ul>
 
 <h2>Steps to run locally:</h2>
-<ul>
+<ul align="left">
     <li>
         <code>cd client</code>
     </li>
@@ -25,14 +25,14 @@
 </ul>
 
 <h2>Command to run on Netlify (for build)</h2>
-<ul>
+<ul align="left">
     <li>
         <code>CI= npm run build</code>
     </li>
 </ul>
 
 <h2>Made using:</h2>
-    <ul>
+    <ul align="left">
         <li>
             Languages:
             <ul>
