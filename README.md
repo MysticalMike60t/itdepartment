@@ -1,3 +1,4 @@
+<p align="center">
 # IT Department Website
 
 ### Grasso Tech's IT Department Website
@@ -25,3 +26,4 @@
     - React
 * <b>Preprocessing:</b>
     - SCSS/SASS
+</p>
