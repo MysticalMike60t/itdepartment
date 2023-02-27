@@ -1,8 +1,8 @@
-<div align="center">
-<h1>IT Department Website</h1>
+<div align="left">
+<h1 align="center">IT Department Website</h1>
 
-<h3>Grasso Tech's IT Department Website</h3>
-<h2>Made by: Caden Finkelstein</h2>
+<h3 align="center">Grasso Tech's IT Department Website</h3>
+<h2 align="center">Made by: Caden Finkelstein</h2>
 
 <h2>Dependencies:</h2>
 <ul>
@@ -12,7 +12,7 @@
 </ul>
 
 <h2>Steps to run locally:</h2>
-<ul align="left">
+<ul>
     <li>
         <code>cd client</code>
     </li>
@@ -25,14 +25,14 @@
 </ul>
 
 <h2>Command to run on Netlify (for build)</h2>
-<ul align="left">
+<ul>
     <li>
         <code>CI= npm run build</code>
     </li>
 </ul>
 
 <h2>Made using:</h2>
-    <ul align="left">
+    <ul>
         <li>
             Languages:
             <ul>
