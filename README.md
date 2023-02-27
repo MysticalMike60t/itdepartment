@@ -4,7 +4,7 @@
 ## Made by: Caden Finkelstein
 
 ## Dependencies:
-* ### NODE JS
+* ### ***NODE JS***
 
 ## Steps to run locally:
 * ```cd client```
