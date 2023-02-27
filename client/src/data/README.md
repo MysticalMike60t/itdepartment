@@ -1,7 +1,7 @@
 # Data files
 #### These files control significant data values that when changed, affect areas of the website.
 #### These files have the structure of:
-> # `data.js`
+> ### `data.js`
 ```
 const nameData = [
     {name: "", age: "", dob: ""},
@@ -9,7 +9,7 @@ const nameData = [
 ]
 export default nameData
 ```
-# Or
+### Or
 ```
 const nameData = [
     {name: "", age: "", dob: ""},
