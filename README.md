@@ -35,15 +35,25 @@
     <ul>
         <li>
             Languages:
-            <li>Javascript</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>JSON</li>
-            <li>SVG</li>
+            <ul>
+                <li>Javascript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>JSON</li>
+                <li>SVG</li>
+            </uL>
         </li>
-        * <b>Libraries:</b>
-            - React
-        * <b>Preprocessing:</b>
-            - SCSS/SASS
+        <li>
+            Libraries:
+            <ul>
+                <li>React</li>
+            </ul>
+        </li>
+        <li>
+            Preprocessing:
+            <ul>
+                <li>SCSS/SASS</li>
+            </ul>
+        </li>
     </ul>
 </p>
