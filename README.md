@@ -1,5 +1,5 @@
 <div align="left">
-<h1 align="center" border-bottom="none">IT Department Website</h1>
+<h1 align="center">IT Department Website</h1>
 <h3 align="center">Grasso Tech's IT Department Website</h3>
 <h2 align="center">Made by: Caden Finkelstein</h2>
 <h2>Dependencies:</h2>
