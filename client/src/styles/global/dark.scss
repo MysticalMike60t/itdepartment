@@ -108,6 +108,13 @@
             }
         }
     }
+    &.contactContainer {
+        .info-wrapper {
+            h4 {
+                background: rgb(40,40,40);
+            }
+        }
+    }
     .page-wrapper {
         background: rgb(30,30,30);
         .text-wrapper {
