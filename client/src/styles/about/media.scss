@@ -1,29 +1,31 @@
 @media screen and (max-width: 570px) {
-    .teachers-wrapper {
-        .nav {
-            width: 100vw;
-            height: 75px;
-            flex-direction: row;
-            border-right: 2px solid transparent;
-            background: rgb(250,250,250);
-            border-bottom: 2px solid rgb(200,200,200);
-            overflow-y: hidden;
-            overflow-x: auto;
-            .t-btn {
-                font-size: 1.3rem;
-                height: 55px;
-                padding-left: 20px;
-                padding-right: 20px;
-                position: relative;
-                &:nth-child(1) {
-                    margin-top: 10px;
+    .aboutContainer {
+        .teachers-wrapper {
+            .nav {
+                width: 100vw;
+                height: 75px;
+                flex-direction: row;
+                border-right: 2px solid transparent;
+                background: rgb(250,250,250);
+                border-bottom: 2px solid rgb(200,200,200);
+                overflow-y: hidden;
+                overflow-x: auto;
+                .t-btn {
+                    font-size: 1.3rem;
+                    height: 55px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    position: relative;
+                    &:nth-child(1) {
+                        margin-top: 10px;
+                    }
                 }
             }
-        }
-        .inst {
-            width: 100vw;
-            left: 0;
-            top: 25vw;
+            .inst {
+                width: 100vw;
+                left: 0;
+                top: 25vw;
+            }
         }
     }
 }

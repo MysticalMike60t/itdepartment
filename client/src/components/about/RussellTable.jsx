@@ -19,7 +19,7 @@ const RussellTable = () => {
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Age</th>
-                        <th>Grade<sup>[<Link to="/" className="i">i</Link>]</sup></th>
+                        <th>Grade</th>
                     </tr>
                 </thead>
                 

@@ -19,9 +19,9 @@ function Cirs() {
       <div className="page-wrapper">
         <Para title={jName.title_1} text={jName.text_1}/>
         <Para title={jName.title_2} text={<><b>
-          <i>Programming<sup>[<Link to='/' className='i'>i</Link>]</sup>:</i>
+          <i>Programming:</i>
         </b> Some computer and information research scientists study and design new programming languages that are used to write software. New languages make software writing efficient by improving an existing language, such as Java, or by simplifying a specific aspect of programming, such as image processing.<br /><br /><b>
-            <i>Robotics<sup>[<Link to='/' className='i'>i</Link>]</sup>:</i>
+            <i>Robotics:</i>
           </b> These scientists study the development and application of robots.
           They explore how a machine can interact with the physical world. For
           example, they may create systems that control the robots or design

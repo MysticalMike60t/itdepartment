@@ -1,3 +1,12 @@
+@media screen and (max-width: 1661px) {
+    .homeContainer {
+        .bg {
+            video {
+                width: 200%;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1345px) {
     .homeContainer {
         .actions {
@@ -9,6 +18,42 @@
                 width: 80%;
                 padding: 40px;
                 margin: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 835px) {
+    .homeContainer {
+        .bg {
+            video {
+                width: 250%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 671px) {
+    .homeContainer {
+        .bg {
+            video {
+                width: 300%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 561px) {
+    .homeContainer {
+        .bg {
+            video {
+                width: 400%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 423px) {
+    .homeContainer {
+        .bg {
+            video {
+                width: 500%;
             }
         }
     }
