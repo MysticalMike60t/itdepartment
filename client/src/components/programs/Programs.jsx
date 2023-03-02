@@ -1,7 +1,8 @@
 import React from 'react'
 import $ from "jquery";
 
-import Cards from './Cards';
+import Card from "./modules/Card";
+import { programCardData } from '../../data/programs/data';
 
 const Programs = () => {
   $(document).ready(function() {
@@ -13,7 +14,13 @@ const Programs = () => {
   });
   return (
     <div className="programsContainer container">
-        <Cards />
+      <div className="cards-wrapper">
+        {programCardData.map((data,key)=>{
+          return(
+            <Card key={key} loc={data.loc} title={data.title}/>
+          )
+        })}
+      </div>
     </div>
   )
 }
