@@ -32,8 +32,8 @@ import './styles/global/uni.scss';
 function App() {
   $(document).ready(function() {
     try {
-      // console.clear();
-      console.log("App started!");
+      console.clear();
+      console.log("Working!");
     } catch(e) {
       console.log(e);
     }
