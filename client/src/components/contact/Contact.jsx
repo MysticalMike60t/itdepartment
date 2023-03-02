@@ -1,7 +1,7 @@
 import React from 'react'
 import $ from "jquery";
 
-import ContactInfo from './ContactInfo';
+import ContactInfo from './modules/ContactInfo';
 
 const Contact = () => {
   $(document).ready(function() {

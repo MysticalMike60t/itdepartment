@@ -1,7 +1,7 @@
 import React from 'react'
 import $ from "jquery"
 
-import data from "../../data/contact/data.json";
+import data from "../../../data/contact/data.json";
 
 const Contacts = () => {
   let email = data.email;
