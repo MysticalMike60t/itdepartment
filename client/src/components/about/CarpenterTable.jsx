@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+
+import Student from '../../data/components/Student';
+import { carpenterStudents } from '../../data/about/students/data';
+
 import carpenter from "../../assets/images/CarpenterS-150x150.jpg";
-import Carpenter from './CarpenterTableData';
 
 const CarpenterTable = () => {
     return (
@@ -23,7 +26,11 @@ const CarpenterTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <Carpenter />
+                {carpenterStudents.map((data, key)=>{
+                    return(
+                        <Student key={key} firstName={data.firstName} lastName={data.lastName} age={data.age} grade={data.grade}/>
+                    );
+                })}
                 </tbody>
             </table>
         </div>

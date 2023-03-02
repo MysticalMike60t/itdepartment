@@ -1,7 +1,8 @@
 import React from 'react'
 import $ from "jquery";
+import { Link, Outlet } from "react-router-dom";
 
-import Teachers from './Teachers';
+import nav from "../../data/about/nav/data";
 
 const about = () => {
   $(document).ready(function() {
@@ -13,7 +14,17 @@ const about = () => {
   });
   return (
     <div className="aboutContainer container">
-        <Teachers />
+        <div className="teachers-wrapper">
+            <div className="nav">
+              {nav.map((data, key)=>{
+                return(
+                  <Link className='t-btn' to={data.link} key={key}>{data.text}</Link>
+                );
+              })
+              }
+            </div>
+            <Outlet />
+        </div>
     </div>
   )
 }
