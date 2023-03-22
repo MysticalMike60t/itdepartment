@@ -7,9 +7,12 @@
                 flex-direction: row;
                 border-right: 2px solid transparent;
                 background: rgb(250,250,250);
-                border-bottom: 2px solid rgb(200,200,200);
+                border-bottom: 2px solid $primary-1;
                 overflow-y: hidden;
                 overflow-x: auto;
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 20px 20px 0 0;
+                }
                 .t-btn {
                     font-size: 1.3rem;
                     height: 55px;
@@ -38,6 +41,26 @@
                 width: calc(100% - ($margin + $margin));
             }
             */
+        }
+    }
+}
+@media screen and (max-height: 685px) {
+    .teachers-wrapper {
+        .nav {
+            .t-btn {
+                height: 50px !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-height: 538px) {
+    .teachers-wrapper {
+        .nav {
+            .t-btn {
+                padding: 0;
+            }
         }
     }
 }
