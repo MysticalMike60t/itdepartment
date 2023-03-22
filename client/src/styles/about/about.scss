@@ -20,6 +20,8 @@ $nav-width: 25vw;
             position: fixed;
             z-index: 98;
             border-right: 2px solid rgb(200,200,200);
+            overflow-y: auto;
+            overflow-x: hidden;
             &::-webkit-scrollbar {
                 height: 4px;
             }
