@@ -1,23 +1,25 @@
 import {React,useEffect,useState} from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import { motion as m } from "framer-motion"
 
 import BrightnessMediumIcon from '@mui/icons-material/BrightnessMedium';
 
 import grassotechItLogo from '../../assets/images/logos/grassotechItLogo.svg';
 
+import { transition } from '../../data/global/data';
 import hData from "../../data/header/data";
 
 const Header = () => {
     $(document).ready(function() {
-        if (localStorage.getItem("theme") === "dark") {
-          $(".headerContainer").addClass("dark");
-        } else {
+        if (localStorage.getItem("theme") === "light") {
           $(".headerContainer").removeClass("dark");
+        } else {
+          $(".headerContainer").addClass("dark");
         }
       });
     return (
-        <div className="headerContainer" id="header">
+        <m.div className="headerContainer dark" id="header">
             <div className="logo">
                 <Link to="/" className='logoLink'>
                     <img src={grassotechItLogo} alt="homeLinkImage" />
@@ -37,7 +39,7 @@ const Header = () => {
                     <BrightnessMediumIcon className='theme-icon'/>
                 </button>
             </div>
-        </div>
+        </m.div>
     )
 }
 

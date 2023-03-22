@@ -7,14 +7,14 @@ import cna from "./json/cna.json";
 function Cna() {
   let jName = cna;
   $(document).ready(function() {
-    if (localStorage.getItem("theme") === "dark") {
-      $(".container").addClass("dark");
-    } else {
+    if (localStorage.getItem("theme") === "light") {
       $(".container").removeClass("dark");
+    } else {
+      $(".container").addClass("dark");
     }
   });
   return (
-    <div className="container">
+    <div className="container dark">
         <div className="page-wrapper">
           <Para title={jName.title_1} text={jName.text_1} />
           <Para title={jName.title_2} text={jName.text_2} />

@@ -1,9 +1,11 @@
 import { React } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import { motion as m } from "framer-motion"
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
+import { transition } from '../../data/global/data';
 import homeHeadTitleData from "../../data/home/head/data";
 
 import bgVideo001 from "../../assets/videos/Pexels Videos 2278095.mp4";
@@ -21,12 +23,12 @@ export const Home = () => {
   let vidOut = vids[Math.floor(Math.random() * 4)];
   let style = {background: "$primary-1"};
   $(document).ready(function() {
-    if (localStorage.getItem("theme") === "dark") {
-      $(".homeContainer").addClass("dark");
-      $(".headContainer").addClass("dark");
-    } else {
+    if (localStorage.getItem("theme") === "light") {
       $(".homeContainer").removeClass("dark");
       $(".headContainer").removeClass("dark");
+    } else {
+      $(".homeContainer").addClass("dark");
+      $(".headContainer").addClass("dark");
     }
     $("h1").html(homeHeadTitleData.map((data,key)=>{return(data.text)}));
     $("h2").html(homeHeadTitleData.map((data,key)=>{return(data.subText)}));
@@ -35,7 +37,7 @@ export const Home = () => {
     }
   });
   return (
-    <div className="homeContainer container" style={style}>
+    <m.div className="homeContainer container dark" style={style}>
       <div className="headContainer" id="h">
         <div className="bg">
           <video src={vidOut} type="video/mp4" autoPlay muted loop/>
@@ -52,7 +54,7 @@ export const Home = () => {
           <Link className="button" to="/contact"><span>Contact</span></Link>
         </div>
       </div>
-    </div>
+    </m.div>
   )
 }
 

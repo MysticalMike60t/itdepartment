@@ -8,14 +8,14 @@ import cirs from "./json/cirs.json";
 function Cirs() {
   let jName = cirs;
   $(document).ready(function() {
-    if (localStorage.getItem("theme") === "dark") {
-      $(".container").addClass("dark");
-    } else {
+    if (localStorage.getItem("theme") === "light") {
       $(".container").removeClass("dark");
+    } else {
+      $(".container").addClass("dark");
     }
   });
   return (
-    <div className="container program-page-container">
+    <div className="container program-page-container dark">
       <div className="page-wrapper">
         <Para title={jName.title_1} text={jName.text_1}/>
         <Para title={jName.title_2} text={<><b>

@@ -1,20 +1,23 @@
 import React from 'react'
 import $ from "jquery";
+import { motion as m } from "framer-motion"
 
 import ContactInfo from './modules/ContactInfo';
 
+import { transition } from '../../data/global/data';
+
 const Contact = () => {
   $(document).ready(function() {
-    if (localStorage.getItem("theme") === "dark") {
-      $(".contactContainer").addClass("dark");
-    } else {
+    if (localStorage.getItem("theme") === "light") {
       $(".contactContainer").removeClass("dark");
+    } else {
+      $(".contactContainer").addClass("dark");
     }
   });
   return (
-    <div className="contactContainer container">
+    <m.div className="contactContainer container dark">
       <ContactInfo />
-    </div>
+    </m.div>
   )
 }
 

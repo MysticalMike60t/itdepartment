@@ -1,19 +1,21 @@
 import React from 'react'
 import $ from "jquery";
 import { Link, Outlet } from "react-router-dom";
+import { motion as m } from "framer-motion"
 
+import { transition } from '../../data/global/data';
 import nav from "../../data/about/nav/data";
 
 const about = () => {
   $(document).ready(function() {
-    if (localStorage.getItem("theme") === "dark") {
-      $(".aboutContainer").addClass("dark");
-    } else {
+    if (localStorage.getItem("theme") === "light") {
       $(".aboutContainer").removeClass("dark");
+    } else {
+      $(".aboutContainer").addClass("dark");
     }
   });
   return (
-    <div className="aboutContainer container">
+    <m.div className="aboutContainer container dark">
         <div className="teachers-wrapper">
             <div className="nav">
               {nav.map((data, key)=>{
@@ -25,7 +27,7 @@ const about = () => {
             </div>
             <Outlet />
         </div>
-    </div>
+    </m.div>
   )
 }
 

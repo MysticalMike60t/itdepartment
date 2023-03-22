@@ -1,6 +1,7 @@
 import React from 'react';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import $ from "jquery";
+import { AnimatePresence } from "framer-motion"
 
 import NoPage from './components/global/NoPage';
 import Layout from './components/global/Layout';
@@ -30,6 +31,7 @@ import Videos from './components/about/info/Videos';
 import './styles/global/uni.scss';
 
 function App() {
+  const location = useLocation();
   $(document).ready(function() {
     try {
       console.clear();
@@ -40,11 +42,12 @@ function App() {
   });
   return (
     <div>
-        <Routes>
+      <AnimatePresence initial={true}>
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Layout/>}>
-            <Route index element={<Home />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="programs">
+            <Route index element={<Home />} key={location.pathname} />
+            <Route path="contact" element={<Contact />} key={location.pathname} />
+            <Route path="programs" key={location.pathname}>
               <Route index element={<Programs/>} />
               <Route path="cirs" element={<Cirs/>} />
               <Route path="cna" element={<Cna/>} />
@@ -57,7 +60,7 @@ function App() {
               <Route path="sd" element={<Sd/>} />
               <Route path="wd" element={<Wd/>} />
             </Route>
-            <Route path="info" element={<About/>}>
+            <Route path="info" element={<About/>} key={location.pathname}>
               <Route index element={<><div className="inst"><h1>Click a button to navigate</h1></div></>}/>
               <Route path="russell">
                 <Route index element={<RussellTable/>}/>
@@ -78,8 +81,9 @@ function App() {
               </Route>
             </Route>
           </Route>
-          <Route path="*" element={<NoPage/>} />
+          <Route path="*" element={<NoPage/>} key={location.pathname} />
         </Routes>
+      </AnimatePresence>
     </div>
   );
 }

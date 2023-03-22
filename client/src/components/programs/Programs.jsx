@@ -6,14 +6,14 @@ import { programCardData } from '../../data/programs/data';
 
 const Programs = () => {
   $(document).ready(function() {
-    if (localStorage.getItem("theme") === "dark") {
-      $(".programsContainer").addClass("dark");
-    } else {
+    if (localStorage.getItem("theme") === "light") {
       $(".programsContainer").removeClass("dark");
+    } else {
+      $(".programsContainer").addClass("dark");
     }
   });
   return (
-    <div className="programsContainer container">
+    <div className="programsContainer container dark">
       <div className="cards-wrapper">
         {programCardData.map((data,key)=>{
           return(
