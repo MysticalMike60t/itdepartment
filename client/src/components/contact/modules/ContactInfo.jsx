@@ -6,15 +6,15 @@ import data from "../../../data/contact/data.json";
 const Contacts = () => {
   let email = data.email;
   let link = "mailto:" + email;
+  let displayEmail = email;
   let pText = "Phone:";
   let pTextSub;
   let eText = "Email:";
   let eTextSub;
   let aText = "Address:";
   let aTextSub;
-  const phone_e = document.getElementById("phone");
-  const email_e = document.getElementById("email");
-  const address_e = document.getElementById("address");
+  let arText = "Area:";
+  let arTextSub;
   const show = (item) => {
     alert(item);
   }
@@ -22,6 +22,9 @@ const Contacts = () => {
     pTextSub = pText.substring(0,pText.length-1);
     eTextSub = eText.substring(0,eText.length-1);
     aTextSub = aText.substring(0,aText.length-1);
+    arTextSub = arText.substring(0,arText.length-1);
+  } else if (window.innerWidth <= 960) {
+    displayEmail = "Email Director";
   }
   $(document).ready(function(){
     if (window.innerWidth <= 500) {
@@ -34,14 +37,20 @@ const Contacts = () => {
       $("#address").unbind().click(function() {
         show(data.address);
       });
+      $("#area").unbind().click(function() {
+        show(data.area);
+      });
 }
   })
   return (
-    <div className="info-wrapper">
-      <h4 id="phone">{pTextSub} <span>{data.phone}</span></h4>
-      <h4 id="email">{eTextSub} <a href={link}>{email}</a></h4>
-      <h4 id="address">{aTextSub} <span>{data.address}</span></h4>
-    </div>
+    <>
+      <div className="info-wrapper">
+        <h4 id="phone">{pTextSub} <span>{data.phone}</span></h4>
+        <h4 id="email">{eTextSub} <a href={link}>{displayEmail}</a></h4>
+        <h4 id="address">{aTextSub} <span>{data.address}</span></h4>
+        <h4 id="area">{arTextSub}<span>{data.area}</span></h4>
+      </div>
+    </>
   )
 }
 
