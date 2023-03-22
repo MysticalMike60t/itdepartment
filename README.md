@@ -1,5 +1,4 @@
 <div align="left">
-asdjasuhdfiuahfhd
 <h1 align="center" border="none">IT Department Website</h1>
 <h3 align="center">Grasso Tech's IT Department Website</h3>
 <h2 align="center">Made by: Caden Finkelstein</h2>
