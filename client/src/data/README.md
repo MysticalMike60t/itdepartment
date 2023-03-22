@@ -21,3 +21,14 @@ const siteData = [
 ]
 export { nameData, siteData }
 ```
+### Or
+```sh
+{
+    "value1": "input1"
+    "value2": "input2"
+    "values1": {
+        "input1": "input1",
+        "input2": "input2"
+    }
+}
+```
