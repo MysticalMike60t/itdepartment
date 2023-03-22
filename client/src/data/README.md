@@ -22,6 +22,7 @@ const siteData = [
 export { nameData, siteData }
 ```
 ### Or
+> ### `data.json`:
 ```sh
 {
     "value1": "input1"
