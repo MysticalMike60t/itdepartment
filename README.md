@@ -4,6 +4,7 @@
 <h3 align="center">Made by: Caden Finkelstein</h3>
 
 [![Node.js CI](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml/badge.svg)](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Dark-Side-Web/CompanyWebsite/badges/quality-score.png?b=main&s=ed322d7fc1e970242b7854e3113aff23001f0fa8)](https://scrutinizer-ci.com/g/Dark-Side-Web/CompanyWebsite/?branch=main)
     
 <h2>Dependencies:</h2>
 <ul>
