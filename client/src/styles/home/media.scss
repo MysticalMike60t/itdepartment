@@ -58,3 +58,36 @@
         }
     }
 }
+@media screen and (max-height: 570px) {
+    .homeContainer {
+        .headContainer {
+            .center-img {
+                h1 {
+                    top: 10%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-height: 465px) {
+    .homeContainer {
+        .headContainer {
+            .center-img {
+                h1 {
+                    top: 20%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-height: 385px) {
+    .homeContainer {
+        .headContainer {
+            .center-img {
+                h1 {
+                    top: 25%;
+                }
+            }
+        }
+    }
+}

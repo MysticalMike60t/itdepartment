@@ -30,11 +30,14 @@ export const Home = () => {
       $(".homeContainer").addClass("dark");
       $(".headContainer").addClass("dark");
     }
-    $("h1").html(homeHeadTitleData.map((data,key)=>{return(data.text)}));
-    $("h2").html(homeHeadTitleData.map((data,key)=>{return(data.subText)}));
-    if (window.innerWidth <= 1345) {
-      $("h1").html(homeHeadTitleData.map((data,key)=>{return(data.shortenedText)}));
-    }
+    $("h2").html(homeHeadTitleData.map((data)=>{return(data.subText)}));
+    setInterval(() => {
+      if (window.innerWidth <= 1345) {
+        $("h1").html(homeHeadTitleData.map((data)=>{return(data.shortenedText)}));
+      } else {
+        $("h1").html(homeHeadTitleData.map((data)=>{return(data.text)}));
+      }
+    }, 1);
   });
   return (
     <m.div className="homeContainer container dark" style={style}>
