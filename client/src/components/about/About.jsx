@@ -3,7 +3,6 @@ import $ from "jquery";
 import { Link, Outlet } from "react-router-dom";
 import { motion as m } from "framer-motion"
 
-import { transition } from '../../data/global/data';
 import nav from "../../data/about/nav/data";
 
 const about = () => {

@@ -4,8 +4,6 @@ import { motion as m } from "framer-motion"
 
 import ContactInfo from './modules/ContactInfo';
 
-import { transition } from '../../data/global/data';
-
 const Contact = () => {
   $(document).ready(function() {
     if (localStorage.getItem("theme") === "light") {
