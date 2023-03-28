@@ -3,7 +3,9 @@
 <h3 align="center">Grasso Tech's IT Department Website</h3>
 <h3 align="center">Made by: Caden Finkelstein</h3>
 
+<div>
 [![Node.js CI](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml/badge.svg)](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml)
+</div>
     
 <h2>Dependencies:</h2>
 <ul>
