@@ -1,4 +1,4 @@
-import {React,useEffect,useState} from 'react'
+import { React } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
 import { motion as m } from "framer-motion"
@@ -7,7 +7,6 @@ import BrightnessMediumIcon from '@mui/icons-material/BrightnessMedium';
 
 import grassotechItLogo from '../../assets/images/logos/grassotechItLogo.svg';
 
-import { transition } from '../../data/global/data';
 import hData from "../../data/header/data";
 
 const Header = () => {

@@ -5,7 +5,6 @@ import { motion as m } from "framer-motion"
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-import { transition } from '../../data/global/data';
 import homeHeadTitleData from "../../data/home/head/data";
 
 import bgVideo001 from "../../assets/videos/Pexels Videos 2278095.mp4";
@@ -46,8 +45,8 @@ export const Home = () => {
           <video src={vidOut} type="video/mp4" autoPlay muted loop/>
         </div>
         <div className="center-img">
-          <h1></h1>
-          <h2></h2>
+          <h1>_</h1>
+          <h2>_</h2>
           <ArrowDropDownIcon className="scroll"/>
           <span className="bg"></span>
         </div>
