@@ -12,17 +12,18 @@
     </li>
 </ul>
 <h2>Steps to run locally in CMD, Terminal, Bash, etc:</h2>
-<ul>
-    <li>
-        <code>cd client</code>
-    </li>
-    <li>
-        <code>npm i</code>
-    </li>
-    <li>
-        <code>npm start</code>
-    </li>
-</ul>
+~~~
+cd client
+~~~
+<br/>
+~~~
+npm i
+~~~
+<br/>
+~~~
+npm start
+~~~
+<br/>
 <h2>Command to run on Netlify (for build)</h2>
 <ul>
     <li>
