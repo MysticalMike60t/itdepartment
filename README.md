@@ -15,15 +15,12 @@
 ~~~
 cd client
 ~~~
-<br/>
 ~~~
 npm i
 ~~~
-<br/>
 ~~~
 npm start
 ~~~
-<br/>
 <h2>Command to run on Netlify (for build)</h2>
 <ul>
     <li>
