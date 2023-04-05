@@ -11,7 +11,7 @@
         <a href="https://nodejs.org/en/">NODE JS</a>
     </li>
 </ul>
-## Steps to run locally in CMD, Terminal, Bash, etc:
+### Steps to run locally in CMD, Terminal, Bash, etc:
 ~~~
 cd client
 ~~~
@@ -21,6 +21,7 @@ npm i
 ~~~
 npm start
 ~~~
+<br/>
 <h2>Command to run on Netlify (for build)</h2>
 <ul>
     <li>
