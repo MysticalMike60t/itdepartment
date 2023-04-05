@@ -1,7 +1,8 @@
-
-# IT Department Website
+<div>
+    # IT Department Website
 ### Grasso Tech's IT Department Website
 ### Made by: Caden Finkelstein
+</div>
 
 [![Node.js CI](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml/badge.svg)](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml)
     
