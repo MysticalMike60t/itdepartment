@@ -6,11 +6,7 @@
 [![Node.js CI](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml/badge.svg)](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml)
     
 <h2>Dependencies:</h2>
-<ul>
-    <li>
-        <a href="https://nodejs.org/en/">NODE JS</a>
-    </li>
-</ul>
+* [Node JS](https://nodejs.org/en/)
 ### Steps to run locally in CMD, Terminal, Bash, etc:
 ~~~
 cd client
