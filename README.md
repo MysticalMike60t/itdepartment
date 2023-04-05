@@ -1,11 +1,11 @@
 
-<h1 align="center" border="none">IT Department Website</h1>
-<h3 align="center">Grasso Tech's IT Department Website</h3>
-<h3 align="center">Made by: Caden Finkelstein</h3>
+# IT Department Website
+### Grasso Tech's IT Department Website
+### Made by: Caden Finkelstein
 
 [![Node.js CI](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml/badge.svg)](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml)
     
-<h2>Dependencies:</h2>
+## Dependencies:
 * [Node JS](https://nodejs.org/en/)
 ### Steps to run locally in CMD, Terminal, Bash, etc:
 ~~~
