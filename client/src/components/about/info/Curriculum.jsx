@@ -4,45 +4,26 @@ import { items, cards, head } from "../../../data/about/curriculum/data";
 const Curriculum = () => {
   return (
     <div className="inst learning">
-      <h1>Curriculum</h1>
-      <div className="display">
-        {head.map((data,key)=>{
+      <div className='learning__title'>
+        <h1 className="title__h1">
+          Curriculum
+        </h1>
+      </div>
+      <div className="display display-credits">
+        {items.map((data,key)=>{
           return(
-            <span className="item" key={key}><span>{items[0].credits}</span> <p className="text">Credits</p> </span>
+            <span className="item" key={key}><span>{data.credits}</span> <p className="text">Credits</p> </span>
           )
         })}
       </div>
-      {/* <table>
-        <thead>
-          <tr>
-            {head.map((data, key) => {
-              return (
-                <th key={key}>{data.title} {data.grade}</th>
-              );
-            })}
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            {items.map((data, key) => {
-              return (
-                <td key={key}>
-                  {data.credits}
-                </td>
-              );
-            })}
-          </tr>
-          <tr>
-            {items.map((data, key) => {
-              return (
-                <td key={key}>
-                  {data.subject}
-                </td>
-              );
-            })}
-          </tr>
-        </tbody>
-      </table> */}
+      <div className="display display-subject">
+        {items.map((data,key)=>{
+          return(
+            <span className="item item-subject" key={key}><span className="grade">{head[key].grade}</span><span className='subject'>{data.subject}</span></span>
+          )
+        })}
+      </div>
+      {/* <div className="learing__seperator"></div> */}
       {cards.map((data,key)=>{
         return(
           <div className="card" key={key}>

@@ -32,9 +32,9 @@ export const Home = () => {
     $("h2").html(homeHeadTitleData.map((data)=>{return(data.subText)}));
     setInterval(() => {
       if (window.innerWidth <= 1345) {
-        $("h1").html(homeHeadTitleData.map((data)=>{return(data.shortenedText)}));
+        $(".title__h1").html(homeHeadTitleData.map((data)=>{return(data.shortenedText)}));
       } else {
-        $("h1").html(homeHeadTitleData.map((data)=>{return(data.text)}));
+        $(".title__h1").html(homeHeadTitleData.map((data)=>{return(data.text)}));
       }
     }, 1);
   });
@@ -45,12 +45,16 @@ export const Home = () => {
           <video src={vidOut} type="video/mp4" autoPlay muted loop/>
         </div>
         <div className="center-img">
-          <h1>_</h1>
+          <div className="center-img__title">
+            <h1 className="title__h1">_</h1>
+          </div>
           <h2>_</h2>
-          <ArrowDropDownIcon className="scroll"/>
+          <a className='center-img__a' href="#actions">
+            <ArrowDropDownIcon className="button__icon scroll"/>
+          </a>
           <span className="bg"></span>
         </div>
-        <div className="actions">
+        <div className="actions" id="actions">
           <Link className="button" to="/programs"><span>Programs</span></Link>
           <Link className="button" to="/info"><span>Info</span></Link>
           <Link className="button" to="/contact"><span>Contact</span></Link>

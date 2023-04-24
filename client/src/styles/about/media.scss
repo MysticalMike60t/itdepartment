@@ -1,12 +1,18 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1253px) {
     .aboutContainer {
         .teachers-wrapper {
             .learning {
-                table {
+                .learning__title {
                     display: none;
                 }
                 .display {
-                    display: block;
+                    &.display-credits {
+                        margin-top: 0;
+                    }
+                    &.display-subject {
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
             }
         }
