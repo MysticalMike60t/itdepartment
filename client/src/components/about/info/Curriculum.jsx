@@ -3,7 +3,7 @@ import { items, cards, head } from "../../../data/about/curriculum/data";
 
 const Curriculum = () => {
   return (
-    <div className="inst learning">
+    <div className="instance learning">
       <div className='learning__title'>
         <h1 className="title__h1">
           Curriculum

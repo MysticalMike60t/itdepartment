@@ -1,6 +1,6 @@
 $front-txt-color: $light-1;
 $background: $primary-1;
-.homeContainer {
+.home__container {
     display: flex;
     justify-content: center;
     // width: calc(100vw - $header-width);
@@ -17,7 +17,7 @@ $background: $primary-1;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    .bg {
+    .container__background {
         width: 100%;
         height: 100%;
         left: 0;
@@ -31,7 +31,7 @@ $background: $primary-1;
             position: absolute;
         }
     }
-    .center-img {
+    .container__wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,7 +52,7 @@ $background: $primary-1;
         overflow: hidden;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         z-index: 92;
-        .center-img__title {
+        .wrapper__title {
             text-align: center;
             width: 100vw;
             .title__h1 {
@@ -79,8 +79,8 @@ $background: $primary-1;
             z-index: 93;
             position: relative;
         }
-        .center-img__a {
-            .scroll {
+        .wrapper__a {
+            .a__icon {
                 color: $front-txt-color;
                 font-size: 10rem;
                 bottom: 0;
@@ -106,7 +106,7 @@ $background: $primary-1;
             }
         }
     }
-    .actions {
+    .container__actions {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -119,7 +119,7 @@ $background: $primary-1;
         background: $light-1;
         position: relative;
         z-index: 91;
-        .button {
+        .actions__button {
             text-decoration: none;
             display: flex;
             justify-content: center;

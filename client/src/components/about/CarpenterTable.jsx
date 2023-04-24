@@ -24,7 +24,7 @@ const CarpenterTable = () => {
         }
     })
     return (
-        <div className="carpenter inst">
+        <div className="carpenter instance">
             <div className="teacher__notification"><p className='notification__p'>Click Here</p><ArrowDropDownIcon className='notification__arrow' /></div>
             <Link className="teacher" to="/info/carpenter/teacher">
                 <div className="hover">

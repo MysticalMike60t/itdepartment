@@ -9,7 +9,7 @@
         background: $primary-1-dark;
     }
 
-    .bg {
+    .container__background {
         filter: brightness(60%);
         z-index: 89;
 
@@ -44,7 +44,7 @@
         }
     }
 
-    .center-img {
+    .container__wrapper {
         h1 {
             color: rgb(250, 250, 250);
         }
@@ -53,22 +53,22 @@
             color: rgb(250, 250, 250);
         }
 
-        .scroll {
+        .a__icon {
             color: rgb(250, 250, 250);
         }
     }
 
-    .actions {
+    .container__actions {
         background: rgb(30, 30, 30);
 
-        .button {
+        .actions__button {
             background: rgb(35, 35, 35);
             color: rgb(250, 250, 250);
         }
     }
 
-    .cards-wrapper {
-        .card {
+    .wrapper__cards {
+        .cards__card {
             background: rgb(35, 35, 35);
 
             h3 {
@@ -93,7 +93,7 @@
             }
         }
 
-        .inst {
+        .instance {
             h2 {
                 color: rgb(250, 250, 250);
             }
@@ -115,7 +115,7 @@
         .learning {
             background: rgb(30, 30, 30);
 
-            .card {
+            .cards__card {
                 background: rgb(35, 35, 35);
                 color: rgb(220, 220, 220);
                 line-height: 30px;

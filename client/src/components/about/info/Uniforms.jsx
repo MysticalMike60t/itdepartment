@@ -6,7 +6,7 @@ const Uniforms = () => {
     document.getElementById(data.id).onclick = function() { window.open(data.link) }
   })*/
   return (
-    <div className="inst">
+    <div className="instance">
         {layout.map((data,key)=>{
             return(
                 <h1 className="title">{data.title}</h1>

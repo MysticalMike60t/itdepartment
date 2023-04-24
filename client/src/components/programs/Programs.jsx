@@ -7,19 +7,21 @@ import { programCardData } from '../../data/programs/data';
 const Programs = () => {
   $(document).ready(function() {
     if (localStorage.getItem("theme") === "light") {
-      $(".programsContainer").removeClass("dark");
+      $(".programs__container").removeClass("dark");
     } else {
-      $(".programsContainer").addClass("dark");
+      $(".programs__container").addClass("dark");
     }
   });
   return (
-    <div className="programsContainer container dark">
-      <div className="cards-wrapper">
-        {programCardData.map((data,key)=>{
-          return(
-            <Card key={key} loc={data.loc} title={data.title}/>
-          )
-        })}
+    <div className="programs__container container dark">
+      <div className="container__wrapper">
+        <div className="wrapper__cards">
+          {programCardData.map((data,key)=>{
+            return(
+              <Card key={key} loc={data.loc} title={data.title}/>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

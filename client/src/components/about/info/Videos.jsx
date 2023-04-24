@@ -4,7 +4,7 @@ import video2 from "../../../videos/Open-House-IT.mp4";
 
 const Videos = () => {
   return (
-    <div className="inst videos">
+    <div className="instance videos">
         <h1>Videos</h1>
         <div className="video-grid">
             <video src={video1} type="video/mp4" autoPlay muted loop controls/>

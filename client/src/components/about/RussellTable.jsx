@@ -19,7 +19,7 @@ const RussellTable = () => {
         }, 2000);
     })
     return (
-        <div className="russell inst">
+        <div className="russell instance">
             <div className="teacher__notification"><p className='notification__p'>Click Here</p><ArrowDropDownIcon className='notification__arrow'/></div>
             <Link className="teacher" to="/info/russell/teacher">
                 <div className="hover">

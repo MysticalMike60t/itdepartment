@@ -61,7 +61,7 @@ function App() {
               <Route path="wd" element={<Wd/>} />
             </Route>
             <Route path="info" element={<About/>} key={location.pathname}>
-              <Route index element={<><div className="inst"><h1>Click a button to navigate</h1></div></>}/>
+              <Route index element={<><div className="instance"><h1>Click a button to navigate</h1></div></>}/>
               <Route path="russell">
                 <Route index element={<RussellTable/>}/>
                 <Route path="teacher" element={<RussellInfo/>} />
