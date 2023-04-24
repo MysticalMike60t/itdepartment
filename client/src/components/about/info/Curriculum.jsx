@@ -5,7 +5,14 @@ const Curriculum = () => {
   return (
     <div className="inst learning">
       <h1>Curriculum</h1>
-      <table>
+      <div className="display">
+        {head.map((data,key)=>{
+          return(
+            <span className="item" key={key}><span>{items[0].credits}</span> <p className="text">Credits</p> </span>
+          )
+        })}
+      </div>
+      {/* <table>
         <thead>
           <tr>
             {head.map((data, key) => {
@@ -35,7 +42,7 @@ const Curriculum = () => {
             })}
           </tr>
         </tbody>
-      </table>
+      </table> */}
       {cards.map((data,key)=>{
         return(
           <div className="card" key={key}>
@@ -44,7 +51,7 @@ const Curriculum = () => {
           </div>
         );
       })}
-      <div className="card">
+      <div className="card last">
         <p>Students successfully completing this course of study will be able to pursue a two-year computer technology degree at state colleges and universities or go on to a four-year computer engineering degree. Students can obtain immediate employment in the Information Technology area. Jobs include: help desk assistant, sales, systems technician and database maintenance, to name a few. Students graduating from Information Technology also find great success in the military in fields like communications, information management and information technician.</p>
         <br/>
       </div>

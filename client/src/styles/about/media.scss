@@ -1,3 +1,17 @@
+@media screen and (max-width: 700px) {
+    .aboutContainer {
+        .teachers-wrapper {
+            .learning {
+                table {
+                    display: none;
+                }
+                .display {
+                    display: block;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 570px) {
     .aboutContainer {
         .teachers-wrapper {

@@ -12,23 +12,23 @@ import hData from "../../data/header/data";
 const Header = () => {
     $(document).ready(function() {
         if (localStorage.getItem("theme") === "light") {
-          $(".headerContainer").removeClass("dark");
+          $(".header__container").removeClass("dark");
         } else {
-          $(".headerContainer").addClass("dark");
+          $(".header__container").addClass("dark");
         }
       });
     return (
-        <m.div className="headerContainer dark" id="header">
-            <div className="logo">
-                <Link to="/" className='logoLink'>
+        <m.div className="header__container dark" id="header">
+            <div className="container__logo">
+                <Link to="/" className='logo__link'>
                     <img src={grassotechItLogo} alt="homeLinkImage" />
                 </Link>
             </div>
-            <ul>
+            <ul className='container__ul'>
                 <div>
                     {hData.map((data, key)=>{
                         return(
-                            <li key={key}><Link to={data.link} className="headerNavigationLink" key={key}><span className="material-symbols-outlined icon">{data.icon}</span><div>{data.text}</div></Link></li>
+                            <li key={key}><Link to={data.link} className="ul__link" key={key}><span className="material-symbols-outlined icon">{data.icon}</span><div>{data.text}</div></Link></li>
                         );
                     })}
                 </div>

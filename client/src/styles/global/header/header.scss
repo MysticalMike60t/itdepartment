@@ -1,5 +1,5 @@
 $header-background: rgb(240,240,240);
-.headerContainer {
+.header__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@ $header-background: rgb(240,240,240);
             li {
                 display: inline-block;
                 margin: 0 30px 0 20px;
-                .headerNavigationLink {
+                .ul__link {
                     font-size: 1.5rem;
                     font-weight: 600;
                     text-decoration: none;
@@ -51,11 +51,11 @@ $header-background: rgb(240,240,240);
             }
         }
     }
-    .logo {
+    .container__logo {
         filter: brightness(120%);
         left: 0;
         position: absolute;
-        .logoLink {
+        .logo__link {
             display: inline-block;
             padding: 0;
             margin: 0 0 0 10vw;
@@ -98,12 +98,12 @@ $header-background: rgb(240,240,240);
         }
     }
 }
-.headerContainerDark {
+.header__containerDark {
     background: rgb(35,35,35);
     ul {
         div {
             li {
-                .headerNavigationLink {
+                .ul__link {
                     color: rgb(240,240,240);
                 }
             }
