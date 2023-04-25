@@ -1,22 +1,52 @@
 .page-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
     .text-wrapper {
-        background: rgb(255,255,255);
-        box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-        border-radius: 20px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        color: black;
         margin-bottom: 30px;
         padding: 30px;
         transition: 100ms ease all;
-        &:hover {
-            $h: 10px;
-            transform: translateY(calc(($h / 2)*-1));
-            box-shadow: 0 $h 10px 0 rgba(0,0,0,0.05);
-        }
+        position: relative;
         h1 {
             margin: 0 0 20px 0;
+            z-index: 2;
+        }
+        p {
+            background: rgb(35,35,35);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 2;
+        }
+        --s: 67px; /* shape size */
+        --m: 4px; /* line thickness */
+
+        --v1: #fff 119.5deg, #0000 120.5deg;
+        --v2: #000 119.5deg, #0000 120.5deg;
+        background: conic-gradient(at var(--m) calc(var(--s) * 0.5777), transparent 270deg, #000 0deg),
+            conic-gradient(at calc(100% - var(--m)) calc(var(--s) * 0.5777), #000 90deg, transparent 0deg),
+            conic-gradient(from -60deg at 50% calc(var(--s) * 0.8662), var(--v1)),
+            conic-gradient(from -60deg at 50% calc(var(--s) * 0.8662 + 2 * var(--m)), var(--v2)),
+            conic-gradient(from 120deg at 50% calc(var(--s) * 1.4435 + 3 * var(--m)), var(--v1)),
+            conic-gradient(from 120deg at 50% calc(var(--s) * 1.4435 + var(--m)), var(--v2)),
+            linear-gradient(90deg, #fff calc(50% - var(--m)), #000 0 calc(50% + var(--m)), #fff 0);
+        background-size: calc(var(--s) + 2 * var(--m)) calc(var(--s) * 1.732 + 3 * var(--m));
+        mix-blend-mode: lighten;
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            opacity: 0.9;
+            background: linear-gradient(90deg, $primary-1-dark, $primary-1, $primary-1-light) left/400% 100%;
+            animation: f 5s infinite alternate linear;
+        }
+        @keyframes f {
+            100% {
+                background-position: right;
+            }
         }
     }
 }

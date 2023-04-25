@@ -1,4 +1,7 @@
 .dark {
+    .container {
+        background: rgb(35,35,35);
+    }
     background: rgb(30, 30, 30);
 
     &::-webkit-scrollbar {
@@ -147,10 +150,9 @@
     }
 
     .page-wrapper {
-        background: rgb(30, 30, 30);
+        background: rgb(35, 35, 35);
 
         .text-wrapper {
-            background: rgb(35, 35, 35);
             color: rgb(250, 250, 250);
 
             h1 {
