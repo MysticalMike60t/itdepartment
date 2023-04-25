@@ -1,9 +1,9 @@
 @media screen and (max-width: 910px) {
-    .programsContainer {
-        .cards-wrapper {
+    .programs__container {
+        .container__wrapper {
             flex-direction: column;
             align-content:center;
-            .card {
+            .cards__card {
                 justify-content: flex-start;
             }
         }

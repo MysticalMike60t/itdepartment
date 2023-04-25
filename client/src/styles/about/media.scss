@@ -1,3 +1,23 @@
+@media screen and (max-width: 1253px) {
+    .aboutContainer {
+        .teachers-wrapper {
+            .learning {
+                .learning__title {
+                    display: none;
+                }
+                .display {
+                    &.display-credits {
+                        margin-top: 0;
+                    }
+                    &.display-subject {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 570px) {
     .aboutContainer {
         .teachers-wrapper {
@@ -24,7 +44,7 @@
                     }
                 }
             }
-            .inst {
+            .instance {
                 width: 100vw;
                 left: 0;
                 top: 25vw;

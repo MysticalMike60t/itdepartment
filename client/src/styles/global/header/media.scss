@@ -1,10 +1,10 @@
 @media screen and (max-width: 790px) {
-    .headerContainer {
+    .header__container {
         justify-content: center;
         align-items: center;
         padding: 0;
         margin: 0;
-        .logo {
+        .container__logo {
             display: none;
         }
         ul {
@@ -13,7 +13,7 @@
                 li {
                     padding: 0;
                     margin: 10px;
-                    .headerNavigationLink {
+                    .ul__link {
                         padding: 0;
                         margin: 0 0 0 0;
                         .icon {
@@ -40,7 +40,7 @@
     }
 }
 @media screen and (max-width: 570px) {
-    .headerContainer {
+    .header__container {
         .theme-changer-wrapper {
             top: 175px;
         }

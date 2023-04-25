@@ -23,37 +23,41 @@ export const Home = () => {
   let style = {background: "$primary-1"};
   $(document).ready(function() {
     if (localStorage.getItem("theme") === "light") {
-      $(".homeContainer").removeClass("dark");
-      $(".headContainer").removeClass("dark");
+      $(".home__container").removeClass("dark");
+      $(".head__container").removeClass("dark");
     } else {
-      $(".homeContainer").addClass("dark");
-      $(".headContainer").addClass("dark");
+      $(".home__container").addClass("dark");
+      $(".head__container").addClass("dark");
     }
     $("h2").html(homeHeadTitleData.map((data)=>{return(data.subText)}));
     setInterval(() => {
       if (window.innerWidth <= 1345) {
-        $("h1").html(homeHeadTitleData.map((data)=>{return(data.shortenedText)}));
+        $(".title__h1").html(homeHeadTitleData.map((data)=>{return(data.shortenedText)}));
       } else {
-        $("h1").html(homeHeadTitleData.map((data)=>{return(data.text)}));
+        $(".title__h1").html(homeHeadTitleData.map((data)=>{return(data.text)}));
       }
     }, 1);
   });
   return (
-    <m.div className="homeContainer container dark" style={style}>
-      <div className="headContainer" id="h">
-        <div className="bg">
+    <m.div className="home__container container dark" style={style}>
+      <div className="head__container" id="h">
+        <div className="container__background">
           <video src={vidOut} type="video/mp4" autoPlay muted loop/>
         </div>
-        <div className="center-img">
-          <h1>_</h1>
+        <div className="container__wrapper">
+          <div className="wrapper__title">
+            <h1 className="title__h1">_</h1>
+          </div>
           <h2>_</h2>
-          <ArrowDropDownIcon className="scroll"/>
-          <span className="bg"></span>
+          <a className='wrapper__a' href="#actions">
+            <ArrowDropDownIcon className="a__icon"/>
+          </a>
+          <span className="wrapper__background"></span>
         </div>
-        <div className="actions">
-          <Link className="button" to="/programs"><span>Programs</span></Link>
-          <Link className="button" to="/info"><span>Info</span></Link>
-          <Link className="button" to="/contact"><span>Contact</span></Link>
+        <div className="container__actions" id="actions">
+          <Link className="actions__button" to="/programs"><span>Programs</span></Link>
+          <Link className="actions__button" to="/info"><span>Info</span></Link>
+          <Link className="actions__button" to="/contact"><span>Contact</span></Link>
         </div>
       </div>
     </m.div>

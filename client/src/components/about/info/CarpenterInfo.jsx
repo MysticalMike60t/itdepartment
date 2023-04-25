@@ -6,7 +6,7 @@ const CarpenterInfo = () => {
     let email = carpenter.map((data)=>{return(data.email)});
     let mail = "mailto:" + email;
   return (
-    <div className="teacherInfo-wrapper inst">
+    <div className="teacherInfo-wrapper instance">
         <h1>{carpenter.map((data)=>{return(data.name)})}</h1>
         <div className="teacher info" style={{pointerEvents: "none"}}>
             <img src={carpenterImg} alt="" />

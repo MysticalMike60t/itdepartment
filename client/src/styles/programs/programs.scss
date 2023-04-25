@@ -1,4 +1,4 @@
-.programsContainer {
+.programs__container {
     display: flex;
     width: 100%;
     height: calc(100vh - $header-height);
@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     background: rgb(250,250,250);
-    .cards-wrapper {
+    .container__wrapper {
         width: 100%;
         flex-direction: row;
         display: flex;
@@ -18,7 +18,7 @@
         flex-wrap: wrap;
         // padding: 2.5% 5% 5% 5%;
         position: relative;
-        .card {
+        .cards__card {
             color: $primary-1;
             text-decoration: none;
             // border-top: 1px solid black;

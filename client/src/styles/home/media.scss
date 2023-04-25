@@ -1,6 +1,6 @@
 @media screen and (max-width: 1661px) {
-    .homeContainer {
-        .bg {
+    .home__container {
+        .container__background {
             video {
                 width: 200%;
             }
@@ -8,13 +8,13 @@
     }
 }
 @media screen and (max-width: 1345px) {
-    .homeContainer {
-        .actions {
+    .home__container {
+        .container__actions {
             height: 90%;
             flex-direction: column;
             top: 0;
             position: relative;
-            .button {
+            .actions__button {
                 width: 80%;
                 padding: 40px;
                 margin: 20px;
@@ -23,8 +23,8 @@
     }
 }
 @media screen and (max-width: 835px) {
-    .homeContainer {
-        .bg {
+    .home__container {
+        .container__background {
             video {
                 width: 250%;
             }
@@ -32,8 +32,8 @@
     }
 }
 @media screen and (max-width: 671px) {
-    .homeContainer {
-        .bg {
+    .home__container {
+        .container__background {
             video {
                 width: 300%;
             }
@@ -41,8 +41,8 @@
     }
 }
 @media screen and (max-width: 561px) {
-    .homeContainer {
-        .bg {
+    .home__container {
+        .container__background {
             video {
                 width: 400%;
             }
@@ -50,8 +50,8 @@
     }
 }
 @media screen and (max-width: 423px) {
-    .homeContainer {
-        .bg {
+    .home__container {
+        .container__background {
             video {
                 width: 500%;
             }
@@ -59,9 +59,9 @@
     }
 }
 @media screen and (max-height: 570px) {
-    .homeContainer {
-        .headContainer {
-            .center-img {
+    .home__container {
+        .head__container {
+            .container__wrapper {
                 h1 {
                     top: 10%;
                 }
@@ -70,9 +70,9 @@
     }
 }
 @media screen and (max-height: 465px) {
-    .homeContainer {
-        .headContainer {
-            .center-img {
+    .home__container {
+        .head__container {
+            .container__wrapper {
                 h1 {
                     top: 20%;
                 }
@@ -81,9 +81,9 @@
     }
 }
 @media screen and (max-height: 385px) {
-    .homeContainer {
-        .headContainer {
-            .center-img {
+    .home__container {
+        .head__container {
+            .container__wrapper {
                 h1 {
                     top: 25%;
                 }

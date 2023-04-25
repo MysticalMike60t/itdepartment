@@ -1,6 +1,6 @@
 $nav-width: 25vw;
 .aboutContainer {
-    background: rgb(250,250,250);
+    background: rgb(250, 250, 250);
     .teachers-wrapper {
         display: flex;
         justify-content: left;
@@ -19,7 +19,7 @@ $nav-width: 25vw;
             // background: $dark-1;
             position: fixed;
             z-index: 98;
-            border-right: 2px solid rgb(200,200,200);
+            border-right: 2px solid rgb(200, 200, 200);
             overflow-y: auto;
             overflow-x: hidden;
             &::-webkit-scrollbar {
@@ -29,7 +29,7 @@ $nav-width: 25vw;
                 background: $primary-1;
             }
             .t-btn {
-                box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
                 $margin: 10px;
                 color: black;
                 display: flex;
@@ -59,7 +59,7 @@ $nav-width: 25vw;
                 }
             }
         }
-        .inst {
+        .instance {
             display: flex;
             align-items: center;
             justify-content: top;
@@ -71,6 +71,37 @@ $nav-width: 25vw;
             padding: 5vh 0 0 0;
             margin: 0;
             position: relative;
+            .teacher__notification {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: black;
+                $height: 10px;
+                height: $height;
+                top: calc(-1.4 * $height);
+                position: relative;
+                opacity: 1;
+                transform: translateY(50px);
+                transition: 100ms ease all;
+                .notification__p {
+                    font-size: 1em;
+                    top: 20px;
+                    position: relative;
+                    transition: 100ms ease all;
+                }
+                .notification__arrow {
+                    opacity: 0;
+                    color: $front-txt-color;
+                    font-size: 3rem;
+                    bottom: -10px;
+                    text-shadow: 0 0 10px 10px rgba(0, 0, 0, 1);
+                    position: relative;
+                    z-index: 99;
+                    animation: scrollIndicator 2.5s ease infinite;
+                    transition: 100ms ease all;
+                }
+            }
             .teacher {
                 min-height: 150px;
                 display: flex;
@@ -81,8 +112,8 @@ $nav-width: 25vw;
                 border-radius: 5px;
                 overflow: hidden;
                 cursor: pointer;
-                outline: 2px solid $primary-1;
-                animation: outline 2s ease infinite;
+                // outline: 2px solid $primary-1;
+                // animation: outline 2s ease infinite;
                 @keyframes outline {
                     0% {
                         outline-offset: 0;
@@ -110,7 +141,7 @@ $nav-width: 25vw;
                     height: 100%;
                     left: 0;
                     top: 0;
-                    background: rgba(250,250,250,0.1);
+                    background: rgba(250, 250, 250, 0.1);
                     opacity: 0;
                     position: absolute;
                     transition: 100ms ease all;
@@ -138,8 +169,8 @@ $nav-width: 25vw;
             table {
                 width: 90%;
                 border-radius: 10px;
-                box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-                background: rgb(255,255,255);
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+                background: rgb(255, 255, 255);
                 position: relative;
                 tr {
                     th {
@@ -159,7 +190,7 @@ $nav-width: 25vw;
         }
         .learning {
             height: auto;
-            background: rgb(250,250,250);
+            background: rgb(250, 250, 250);
             padding-bottom: 50px;
             h1 {
                 font-size: 3rem;
@@ -173,8 +204,8 @@ $nav-width: 25vw;
                 height: auto;
                 padding: $padding;
                 border-radius: 10px;
-                box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-                background: rgb(255,255,255);
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+                background: rgb(255, 255, 255);
                 position: relative;
                 h1 {
                     color: $primary-1;
@@ -189,8 +220,24 @@ $nav-width: 25vw;
                     margin-top: 3%;
                 }
             }
+            .card.last {
+                box-shadow: none;
+                background: none;
+                position: relative;
+                &::after {
+                    width: 100%;
+                    height: 10px;
+                    left: 0;
+                    top: 0;
+                    background: red;
+                    position: absolute;
+                }
+            }
             table {
+                $padding: 20px;
+                width: calc(90% - ($padding * 2));
                 margin-top: 10vh;
+                padding: $padding;
                 border-collapse: collapse;
                 th {
                     height: auto;
@@ -199,13 +246,13 @@ $nav-width: 25vw;
                     color: $primary-1;
                     transition: 100ms ease all;
                     cursor: default;
-                    border-right: 1px solid rgba(0,0,0, 0.2);
+                    border-right: 1px solid rgba(0, 0, 0, 0.2);
                     &:last-child {
                         border-right: none;
                     }
                 }
                 td {
-                    $bc: rgba(0,0,0, 0.2);
+                    $bc: rgba(0, 0, 0, 0.2);
                     font-size: 1rem;
                     border-top: 1px solid $bc;
                     border-right: 1px solid $bc;
@@ -214,6 +261,74 @@ $nav-width: 25vw;
                     }
                 }
             }
+            .display {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                $padding: 20px;
+                width: calc(90% - ($padding * 2));
+                height: auto;
+                padding: $padding;
+                border-radius: 10px;
+                position: relative;
+                &.display-credits {
+                    margin-top: 50px;
+                }
+                .item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 20px;
+                    width: 50px;
+                    height: 50px;
+                    margin: 10px;
+                    background:rgb(250, 250, 250);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    span {
+                        font-size: 2em;
+                    }
+                    .text {
+                        font-size: 0.9em;
+                        margin-top: 20px;
+                        bottom: 0;
+                        position: relative;
+                    }
+                    .subject {
+                        font-size: 1em;
+                    }
+                }
+                .item-subject {
+                    width: auto;
+                    padding-bottom: 30px;
+                    .grade {
+                        width: auto;
+                        font-size: 0.8em;
+                        margin: 0 0 15px 0;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            width: 100%;
+                            height: 1px;
+                            left: 0;
+                            bottom: -4px;
+                            background: $primary-1;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+            // .learing__seperator {
+            //     width: 90%;
+            //     height: 2px;
+            //     left: 0;
+            //     top: 0;
+            //     border-radius: 10px;
+            //     background: $primary-1;
+            //     position: relative;
+            // }
         }
         .videos {
             .video-grid {
