@@ -159,5 +159,68 @@ $background: $primary-1;
             }
         }
     }
+    .container__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        left:0;
+        top: 0;
+        background: rgb(20,20,20);
+        position: relative;
+        h1 {
+            font-size: 1em;
+            padding: 20px 10px 10px 10px;
+            position: relative;
+        }
+        .footer__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            height: 80%;
+            .wrapper__left, .wrapper__right {
+                height: 100%;
+                width: 50%;
+                padding: 20px;
+                a {
+                    // border-right: 1px solid white;
+                    // border-left: 1px solid white;
+                    text-align: center;
+                    color: white;
+                    &:hover {
+                        text-decoration: underline;
+                        background: rgba(255,255,255,0.1);
+                    }
+                }
+            }
+            .wrapper__left {
+                text-align: left;
+                display: flex;
+                align-items: top;
+                justify-content: left;
+                flex-direction: column;
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    width: auto;
+                }
+            }
+            .wrapper__right {
+                text-align: right;
+                display: flex;
+                align-items: top;
+                justify-content: right;
+                flex-direction: column;
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    width: auto;
+                }
+            }
+        }
+    }
 }
 @import "./media.scss";
