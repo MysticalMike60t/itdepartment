@@ -67,7 +67,7 @@
         }
     }
 
-    .wrapper__cards {
+    .container__wrapper {
         .cards__card {
             background: rgb(35, 35, 35);
 
@@ -115,7 +115,7 @@
         .learning {
             background: rgb(30, 30, 30);
 
-            .cards__card {
+            .cards__card, .card {
                 background: rgb(35, 35, 35);
                 color: rgb(220, 220, 220);
                 line-height: 30px;

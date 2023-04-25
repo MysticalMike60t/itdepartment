@@ -14,15 +14,13 @@ const Programs = () => {
   });
   return (
     <div className="programs__container container dark">
-      <div className="container__wrapper">
-        <div className="wrapper__cards">
+        <div className="container__wrapper">
           {programCardData.map((data,key)=>{
             return(
               <Card key={key} loc={data.loc} title={data.title}/>
             )
           })}
         </div>
-      </div>
     </div>
   )
 }
