@@ -1,6 +1,5 @@
 import React from 'react';
 import $ from "jquery";
-import { GoogleCharts } from 'google-charts';
 
 import Para from "./comps/Para";
 import cna from "./json/cna.json";

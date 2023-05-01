@@ -1,7 +1,6 @@
 import React from 'react'
 import $ from "jquery";
 import { motion as m } from "framer-motion"
-import { Chart } from 'chart.js';
 
 import ContactInfo from './modules/ContactInfo';
 
