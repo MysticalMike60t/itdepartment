@@ -10,6 +10,7 @@ import grassotechItLogo from '../../assets/images/logos/grassotechItLogo.svg';
 import hData from "../../data/header/data";
 
 const Header = () => {
+    
     $(document).ready(function() {
         if (localStorage.getItem("theme") === "light") {
           $(".header__container").removeClass("dark");

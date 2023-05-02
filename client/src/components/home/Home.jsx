@@ -78,6 +78,7 @@ export const Home = () => {
               })}
             </div>
           </div>
+          <Link to="/feedback" className='footer__feedback'>Submit Feedback</Link>
         </footer>
       </div>
     </m.div>
