@@ -4,7 +4,7 @@ const Feedback = () => {
   return (
     <div className="feedback__container container dark">
         <div className="container__wrapper">
-            <form className="wrapper__form" name="feedback_form" method="POST" data-netlify="true">
+            <form className="wrapper__form" name="feedback_form" method="POST" action="../home/Home.jsx" data-netlify="true" netlify>
                 <h1>Feedback</h1>
                 <div className="form__inputs">
                     <label htmlFor="">Email <input type="text" className="inputs__input" name="email" /></label>
