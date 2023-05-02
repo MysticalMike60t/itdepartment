@@ -1,5 +1,9 @@
 @import "vars.scss";
+@import "functions.scss";
 @import "header/header.scss";
+*,*::before,*::after {
+    cursor: none !important;
+}
 .root {
     overflow: hidden;
 }
@@ -43,6 +47,33 @@ body {
             text-decoration: underline;
         }
     }
+}
+.cursor {
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: $primary-1;
+    position: fixed;
+    z-index: 101;
+    pointer-events: none;
+}
+.cursor-follow {
+    opacity:0.5;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: $primary-1-dark;
+    position: fixed;
+    z-index: 100;
+    pointer-events: none;
+    z-index: 100;
+    transition: 200ms ease all;
 }
 @import "../home/home.scss";
 @import "../programs/programs.scss";
