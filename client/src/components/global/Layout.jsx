@@ -23,11 +23,11 @@ const Layout = () => {
     });
   });
   $(document).ready(function () {
-    $('.ul__link,button,a,Link').mouseover(function(){
+    $('.ul__link,button,a,Link,input,select').mouseover(function(){
       $(".cursor").css({background: default_cursor_color_hover});
       $(".cursor-follow").css({background: default_cursor_follow_color_hover});
     });
-    $('.ul__link,button,a,Link').mouseout(function(){
+    $('.ul__link,button,a,Link,input,select').mouseout(function(){
       $(".cursor").css({background: default_cursor_color});
       $(".cursor-follow").css({background: default_cursor_follow_color});
     })

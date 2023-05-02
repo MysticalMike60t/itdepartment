@@ -39,7 +39,8 @@ body {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    .link {
+    .nopage__link {
+        color: $primary-1;
         margin-top: 20px;
         text-decoration: none;
         font-size: 1rem;
@@ -79,5 +80,6 @@ body {
 @import "../programs/programs.scss";
 @import "../about/about.scss";
 @import "../contact/contact.scss";
+@import "../feedback/feedback.scss";
 
 @import "./dark.scss";

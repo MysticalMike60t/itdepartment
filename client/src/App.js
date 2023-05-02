@@ -10,6 +10,7 @@ import Home from './components/home/Home';
 import Contact from './components/contact/Contact';
 import Programs from './components/programs/Programs';
 import About from "./components/about/About";
+import Feedback from './components/feedback/Feedback';
 import Cirs from './components/programs/pages/Cirs';
 import Cna from "./components/programs/pages/Cna";
 import Cp from "./components/programs/pages/Cp";
@@ -80,6 +81,10 @@ function App() {
                 <Route index element={<Videos />} />
               </Route>
             </Route>
+            <Route path="feedback">
+              <Route index element={<Feedback />}/>
+            </Route>
+            <Route path="*" element={<NoPage/>} key={location.pathname} />
           </Route>
           <Route path="*" element={<NoPage/>} key={location.pathname} />
         </Routes>
