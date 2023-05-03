@@ -57,7 +57,7 @@ const Feedback = () => {
     return (
         <div className="feedback__container container dark">
             <div className="container__wrapper">
-                <form className="wrapper__form" name="feedback_form"> {/* onSubmit={saveUserFeedback()} */}
+                <form className="wrapper__form" name="feedback_form" onSubmit={handleSubmit}> {/* onSubmit={saveUserFeedback()} */}
                     <h1>Feedback</h1>
                     <div className="form__inputs">
                         <label htmlFor="">Email <input required type="text" className="inputs__input" name="email" onChange={emailUpdate}/></label> {/* value={userFeedback.email} onChange={handleInput}} */}
