@@ -34,12 +34,12 @@ import './styles/global/uni.scss';
 function App() {
   const location = useLocation();
   $(document).ready(function() {
-    // try {
-    //   console.clear();
-    //   console.log("Working!");
-    // } catch(e) {
-    //   console.log(e);
-    // }
+    try {
+      console.clear();
+      console.log("Working!");
+    } catch(e) {
+      console.log(e);
+    }
   });
   return (
     <div>
