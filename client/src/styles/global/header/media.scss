@@ -48,7 +48,7 @@
                 flex-direction: column;
                 background: $dark-1;
                 border-radius: 30px;
-                top: 100% !important;
+                top: 75% !important;
             }
         }
     }
@@ -57,10 +57,10 @@
     .header__container {
         .header__actions {
             .actions__wrapper {
-                flex-direction: column;
+                flex-direction: row;
                 background: $dark-1;
-                border-radius: 0 0 30px 30px;
-                top: 125px !important;
+                border-radius: 30px;
+                top: 95vh !important;
             }
         }
     }
