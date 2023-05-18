@@ -7,13 +7,13 @@ import ContactInfo from './modules/ContactInfo';
 const Contact = () => {
   $(document).ready(function() {
     if (localStorage.getItem("theme") === "light") {
-      $(".contactContainer").removeClass("dark");
+      $(".contact__container").removeClass("dark");
     } else {
-      $(".contactContainer").addClass("dark");
+      $(".contact__container").addClass("dark");
     }
   });
   return (
-    <m.div className="contactContainer container dark">
+    <m.div className="contact__container container dark">
       <ContactInfo />
     </m.div>
   )

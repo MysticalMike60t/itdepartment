@@ -11,6 +11,8 @@ import Contact from './components/contact/Contact';
 import Programs from './components/programs/Programs';
 import About from "./components/about/About";
 import Feedback from './components/feedback/Feedback';
+import Settings from './components/global/Settings';
+import Cursor_color from './components/global/settings/pages/Cursor_color';
 import Cirs from './components/programs/pages/Cirs';
 import Cna from "./components/programs/pages/Cna";
 import Cp from "./components/programs/pages/Cp";
@@ -92,8 +94,11 @@ function App() {
                 <Route index element={<Videos />} />
               </Route>
             </Route>
-            <Route path="feedback">
+            <Route path="feedback" key={location.pathname}>
               <Route index element={<Feedback />} />
+            </Route>
+            <Route path="settings" element={<Settings />} key={location.pathname}>
+              <Route path="cursor_color" element={<Cursor_color/>} />
             </Route>
             <Route path="*" element={<NoPage />} key={location.pathname} />
           </Route>

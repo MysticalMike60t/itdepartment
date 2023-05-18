@@ -11,13 +11,15 @@ import grassotechItLogo from '../../assets/images/logos/grassotechItLogo.svg';
 import hData from "../../data/header/data";
 
 const Header = () => {
-
     $(document).ready(function () {
         if (localStorage.getItem("theme") === "light") {
             $(".header__container").removeClass("dark");
         } else {
             $(".header__container").addClass("dark");
         }
+        $(".wrapper__settings").unbind().click(function(){
+            window.location.pathname="/settings";
+        })
     });
     return (
         <m.div className="header__container dark" id="header">
