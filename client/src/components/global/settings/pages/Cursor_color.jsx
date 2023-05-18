@@ -12,12 +12,14 @@ const Cursor_color = () => {
       setCursorColor(event.target.value);
     } else {
       setCursorColor("#" + event.target.value);
+      localStorage.setItem("cursorColor", "#" + event.target.value);
     }
     localStorage.setItem("cursorColor", cursorColor);
   }
   $(document).ready(function(){
-    if (cursorColor.length < 2) {
-      setCursorColor(localStorage.getItem("cursorColor"));
+    if(!localStorage.getItem("cursorColor")) {
+      setCursorColor("#a71624");
+      localStorage.setItem("cursorColor", "#a71624");
     }
     $("#reloadButton").unbind().click(function(){
       window.location.reload();
