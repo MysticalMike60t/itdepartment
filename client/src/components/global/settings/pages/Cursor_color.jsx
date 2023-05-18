@@ -33,7 +33,7 @@ const Cursor_color = () => {
           <div className="frame__dot" style={{"background": cursorColor}}></div>
         </div>
         <div className="dot__group">
-          <input type="text" className="group__input" id="dot-group_color-view" value={cursorColor} onChange={handleChange} />
+          <input type="text" className="group__input" id="dot-group_color-view" placeholder="#a71624" value={cursorColor} onChange={handleChange} />
           <input type="color" className="group__input" id="dot-group_color" value={cursorColor} onChange={handleChange} />
         </div>
         <button id="reloadButton">Load new Cursor</button>
