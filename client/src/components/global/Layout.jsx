@@ -5,13 +5,11 @@ import { isMobile } from 'react-device-detect';
 
 import Header from './Header'
 
-import { Colors } from "../../data/global/data"
-
 const Layout = () => {
   const default_cursor_color = localStorage.getItem("cursorColor");
-  const default_cursor_color_hover = localStorage.getItem("cursorColor");
+  // const default_cursor_color_hover = localStorage.getItem("cursorColor");
   const default_cursor_follow_color = localStorage.getItem("cursorColor");
-  const default_cursor_follow_color_hover = localStorage.getItem("cursorColor");
+  // const default_cursor_follow_color_hover = localStorage.getItem("cursorColor");
 
   const [theme, setTheme] = useState('light');
   $(document).mousemove(function (e) {

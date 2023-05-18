@@ -3,11 +3,9 @@ import $ from "jquery"
 
 import Title from '../modules/Title'
 
-const Cursor_color = () => {
-  let i = 0;
+const CursorColors = () => {
   let [cursorColor, setCursorColor] = useState('');
   const handleChange = (event) => {
-    i++;
     if (cursorColor.includes("#")) {
       setCursorColor(event.target.value);
     } else {
@@ -48,4 +46,4 @@ const Cursor_color = () => {
   )
 }
 
-export default Cursor_color
+export default CursorColors
