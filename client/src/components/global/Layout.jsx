@@ -23,6 +23,9 @@ const Layout = () => {
       left: e.pageX,
       top: e.pageY
     });
+    if(!localStorage.getItem("cursorColor")) {
+      localStorage.setItem("cursorColor", "#a71624");
+    }
   });
   $(document).ready(function () {
     $(".cursor").css({ background: default_cursor_color });
