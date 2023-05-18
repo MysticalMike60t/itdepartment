@@ -1,4 +1,4 @@
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 999px) {
     .header__container {
         justify-content: center;
         align-items: center;
@@ -27,13 +27,15 @@
                 }
             }
         }
-        .theme-changer-wrapper {
-            top: 50px;
-            .theme-changer {
-                background: rgb(15,15,15);
-                position: relative;
-                .theme-icon {
-                    color: white;
+        .header__actions {
+            .actions__wrapper {
+                right: 5vw !important;
+                .wrapper__theme {
+                    background: rgb(15,15,15);
+                    position: relative;
+                    .theme__icon {
+                        color: white;
+                    }
                 }
             }
         }
@@ -41,8 +43,25 @@
 }
 @media screen and (max-width: 570px) {
     .header__container {
-        .theme-changer-wrapper {
-            top: 175px;
+        .header__actions {
+            .actions__wrapper {
+                flex-direction: column;
+                background: $dark-1;
+                border-radius: 30px;
+                top: 75% !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 460px) {
+    .header__container {
+        .header__actions {
+            .actions__wrapper {
+                flex-direction: row;
+                background: $dark-1;
+                border-radius: 30px;
+                top: 95vh !important;
+            }
         }
     }
 }

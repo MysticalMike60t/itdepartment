@@ -1,4 +1,4 @@
-$header-background: rgb(240,240,240);
+$header-background: rgb(240, 240, 240);
 .header__container {
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@ $header-background: rgb(240,240,240);
     position: fixed;
     //background-color: $header-background;
     background: $header-background;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     // backdrop-filter: blur(2px) brightness(80%);
     z-index: 99;
     transition: 100ms ease all;
@@ -69,50 +69,101 @@ $header-background: rgb(240,240,240);
             }
         }
     }
-    .theme-changer-wrapper {
-        right: 0;
-        position: absolute;
-        .theme-changer {
+    .header__actions {
+        .actions__wrapper {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 10vw 0 0;
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-            border-radius: 100%;
-            background: transparent;
-            transition: 100ms ease all;
-            &:hover {
-                backdrop-filter: brightness(90%);
-                .theme-icon {
-                    color: $primary-1;
+            right: 10vw;
+            top: 50%;
+            transform: translate(0,-50%);
+            position: absolute;
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 0;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                border-radius: 100%;
+                background: transparent;
+                transition: 100ms ease all;
+                &:hover {
+                    backdrop-filter: brightness(90%);
+                    .theme__icon, .settings__icon {
+                        color: $primary-1;
+                    }
                 }
             }
-            .theme-icon {
-                color: black;
-                transition: 100ms ease all;
+            .wrapper__theme {
+                background: none;
+                .theme__icon {
+                    color: rgb(30, 30, 30);
+                }
+            }
+            .wrapper__settings {
+                background: none;
+                .settings__icon {
+                    color: rgb(30, 30, 30);
+                }
             }
         }
     }
 }
-.header__containerDark {
-    background: rgb(35,35,35);
+.header__container.dark {
+    background: rgb(35, 35, 35);
     ul {
         div {
             li {
                 .ul__link {
-                    color: rgb(240,240,240);
+                    color: rgb(240, 240, 240);
                 }
             }
         }
     }
-    .theme-changer-wrapper {
-        .theme-changer {
-            .theme-icon {
-                color: rgb(240,240,240);
+    .header__actions {
+        .actions__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 10vw;
+            top: 50%;
+            transform: translate(0,-50%);
+            position: absolute;
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 0;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                border-radius: 100%;
+                background: transparent;
+                transition: 100ms ease all;
+                &:hover {
+                    backdrop-filter: brightness(90%);
+                    .theme__icon, .settings__icon {
+                        color: $primary-1;
+                    }
+                }
+            }
+            .wrapper__theme {
+                background: none;
+                .theme__icon {
+                    color: rgb(240, 240, 240);
+                }
+            }
+            .wrapper__settings {
+                background: none;
+                .settings__icon {
+                    color: rgb(240, 240, 240);
+                }
             }
         }
     }
