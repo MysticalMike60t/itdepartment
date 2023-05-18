@@ -38,7 +38,7 @@ const Layout = () => {
         $(".cursor-follow").css({background: default_cursor_follow_color});
       })
     }
-    $(".theme-changer").unbind().click(function () {
+    $(".wrapper__theme").unbind().click(function () {
       if (theme === 'light') {
         setTheme('dark');
         $(".container").addClass("dark");
