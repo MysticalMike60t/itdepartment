@@ -14,7 +14,7 @@
     .container__navigation {
         min-width: 300px;
         width: 20vw;
-        background: rgb(30,30,30);
+        background: rgb(30, 30, 30);
         display: block;
         flex-grow: 0;
         flex-shrink: 1;
@@ -29,7 +29,7 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            background: rgb(35,35,35);
+            background: rgb(35, 35, 35);
             padding: 20px;
             border-radius: 10px;
             margin: 0 0 10px 0;
@@ -48,13 +48,79 @@
         flex-basis: auto;
         align-self: auto;
         order: 0;
+        background: rgb(28, 28, 28);
         .setting__wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             padding: 20px;
             // background: red;
             .wrapper__title {
                 margin: 2.5vh 0 0 0;
                 text-align: center;
                 font-size: 2em;
+            }
+            .wrapper__dot,
+            .wrapper__follow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 30px 0 10px 0;
+                .dot__frame,
+                .follow__frame {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 200px;
+                    height: 200px;
+                    background: rgb(40, 40, 40);
+                    border-radius: 10px;
+                    position: relative;
+                    .frame__dot {
+                        width: 50px;
+                        height: 50px;
+                        position: relative;
+                        background: $primary-1;
+                        border-radius: 50%;
+                    }
+                }
+                .dot__group,
+                .follow__group {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 30px 0 0 0;
+                    width: 10%;
+                    input {
+                        text-align: center;
+                        color: white;
+                        width: 100%;
+                        background: rgb(45, 45, 45);
+                        border: none;
+                        outline: none;
+                        padding: 5px;
+                        border-radius: 5px 0 0 5px;
+                        &[type="color"] {
+                            padding: 0;
+                            border-radius: 0;
+                            width: 50%;
+                            min-width: 20px;
+                            min-height: 20px;
+                        }
+                    }
+                }
+                #reloadButton {
+                    width: 200px;
+                    height: 30px;
+                    margin: 30px 0 0 0;
+                    text-align: center;
+                    color: white;
+                    background: rgb(45, 45, 45);
+                    border: none;
+                    outline: none;
+                    padding: 5px;
+                    border-radius: 5px 0 0 5px;
+                }
             }
         }
     }
