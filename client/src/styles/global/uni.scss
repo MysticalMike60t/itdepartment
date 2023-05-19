@@ -75,6 +75,9 @@ body {
     transition: 200ms ease all;
 }
 .inactive_default {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     color: rgba(0,0,0,0) !important;
     opacity: 0.2;
     pointer-events: none;

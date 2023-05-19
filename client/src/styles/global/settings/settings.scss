@@ -14,7 +14,7 @@
     .container__navigation {
         min-width: 300px;
         width: 20vw;
-        background: rgb(30, 30, 30);
+        background: rgb(250, 250, 250);
         display: block;
         flex-grow: 0;
         flex-shrink: 1;
@@ -24,18 +24,21 @@
         position: relative;
         padding: 50px;
         .navigation__button {
-            color: white;
+            font-size: 1.3em;
+            color: black;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            background: rgb(35, 35, 35);
+            background: rgb(255, 255, 255);
+            outline: 1px solid $primary-1;
             padding: 20px;
             border-radius: 10px;
             margin: 0 0 10px 0;
             position: relative;
             transition: 100ms ease all;
             &:hover {
+                color: white;
                 background: $primary-1;
             }
         }
@@ -48,7 +51,7 @@
         flex-basis: auto;
         align-self: auto;
         order: 0;
-        background: rgb(28, 28, 28);
+        background: rgb(245, 245, 245);
         .setting__wrapper {
             display: flex;
             justify-content: center;
@@ -93,6 +96,7 @@
                     width: 10%;
                     input {
                         text-align: center;
+                        // color: black;
                         color: white;
                         width: 100%;
                         background: rgb(45, 45, 45);
@@ -120,6 +124,65 @@
                     outline: none;
                     padding: 5px;
                     border-radius: 5px 0 0 5px;
+                }
+                .dot__info {
+                    color: black;
+                    margin: 20px;
+                }
+            }
+            .wrapper__activation {
+                .universal_wrapper_object {
+                    width: 100%;
+                    height: auto;
+                    background: rgb(35,35,35);
+                    position: relative;
+                    left: -20px;
+                    top: -20px;
+                    padding: 5%;
+                }
+                .activation__checkbox {
+                    font-size: 2em;
+                    color: white;
+                    font-family: system-ui, sans-serif;
+                    font-weight: bold;
+                    line-height: 1.4;
+                    display: grid;
+                    grid-template-columns: 1em auto;
+                    gap: 0.5em;
+                    input {
+                        $bg: rgb(50,50,50);
+                        -webkit-appearance: none;
+                        appearance: none;
+                        background-color: $bg;
+                        margin: 0;
+                        font: inherit;
+                        color: currentColor;
+                        width: 1.15em;
+                        height: 1.15em;
+                        border: 0.15em solid $bg;
+                        border-radius: 0.15em;
+                        transform: translateY(-0.075em);
+
+                        display: grid;
+                        place-content: center;
+                        &::before {
+                            content: "";
+                            width: 0.65em;
+                            height: 0.65em;
+                            transform: scale(0);
+                            transition: 120ms transform ease-in-out;
+                            box-shadow: inset 1em 1em $primary-1;
+                        }
+                        &:checked::before {
+                            transform: scale(1);
+                        }
+                    }
+                    span {
+                        font-size: 0.75em;
+                    }
+                }
+                .activation__checkbox + .activation__checkbox {
+                    margin-top: 1em;
                 }
             }
         }
@@ -177,12 +240,12 @@
                 height: 40px;
                 padding-bottom: 7.5px;
                 right: 10px;
-                background: rgba(150,150,150,0.4);
+                background: rgba(150, 150, 150, 0.4);
                 position: absolute;
             }
             &::-webkit-scrollbar {
                 height: 1px;
-                background: rgb(30,30,30);
+                background: rgb(30, 30, 30);
             }
             &::-webkit-scrollbar-thumb {
                 background: $primary-1;

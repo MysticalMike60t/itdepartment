@@ -15,6 +15,13 @@ const CursorColors = () => {
     localStorage.setItem("cursorColor", cursorColor);
   }
   $(document).ready(function(){
+    setInterval(function() {
+      if(localStorage.getItem("theme")==="dark") {
+        $(".dot__info").css({color: "white"});
+      } else {
+        $(".dot__info").css({color: "black"});
+      }
+    },1);
     if(!localStorage.getItem("cursorColor")) {
       setCursorColor("#a71624");
       localStorage.setItem("cursorColor", "#a71624");
@@ -35,6 +42,7 @@ const CursorColors = () => {
           <input type="color" className="group__input" id="dot-group_color" value={cursorColor} onChange={handleChange} />
         </div>
         <button id="reloadButton">Load new Cursor</button>
+        <p className='dot__info'>Use <i><code>CTRL + B</code></i> to reset cursor.</p>
       </div>
       {/* <div className="wrapper__follow">
         <div className="follow__frame"></div>

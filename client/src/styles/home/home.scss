@@ -168,7 +168,7 @@ $background: $primary-1;
         height: auto;
         left: 0;
         top: 0;
-        background: rgb(20, 20, 20);
+        background: rgb(25, 25, 25);
         position: relative;
         h1 {
             font-size: 1em;
@@ -184,15 +184,24 @@ $background: $primary-1;
             .wrapper__left,
             .wrapper__right {
                 height: 100%;
-                width: 50%;
+                width: 25%;
                 padding: 20px;
-                a {
-                    // border-right: 1px solid white;
-                    // border-left: 1px solid white;
+                .left__link,
+                .right__link {
+                    //border-right: 1px solid white;
+                    //border-left: 1px solid white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
                     text-align: center;
                     color: white;
+                    background: rgb(35, 35, 35);
+                    position: relative;
                     &:hover {
-                        text-decoration: underline;
                         background: rgba(255, 255, 255, 0.1);
                     }
                 }
@@ -223,14 +232,19 @@ $background: $primary-1;
             }
         }
         .footer__feedback {
-            padding: 10px 20px;
-            margin: 0 0 10px 0;
-            text-decoration: underline;
+            text-decoration: none;
+            padding: 20px 15%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            text-align: center;
             color: white;
-            transition: 100ms ease all;
+            background: rgb(35, 35, 35);
+            position: relative;
             &:hover {
-                text-decoration: none;
-                color: $primary-1;
                 background: rgba(255, 255, 255, 0.1);
             }
         }

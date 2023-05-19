@@ -13,6 +13,7 @@ import About from "./components/about/About";
 import Feedback from './components/feedback/Feedback';
 import Settings from './components/global/Settings';
 import CursorColors from './components/global/settings/pages/CursorColors';
+import KeybindNavigation from "./components/global/settings/pages/KeybindNavigation";
 import Cirs from './components/programs/pages/Cirs';
 import Cna from "./components/programs/pages/Cna";
 import Cp from "./components/programs/pages/Cp";
@@ -44,7 +45,31 @@ function App() {
     localStorage.setItem("theme", "dark");
     localStorage.setItem('was_visited', 1);
   }
+  // if (localStorage.getItem("keybindActivation")==="true") {
+  //   setInterval(function(){
+  //     document.onkeyup = function(e) {
+  //       // var key = e.which || e.keyCode;
+  //       if (e.which == 72 || e.keyCode == 72) {
+  //         window.location.pathname="/";
+  //       }
+  //     }
+  //   },1)
+  // } else if (localStorage.getItem("keybindActivation")==="false") {
+  //   setInterval(function(){
+  //     document.onkeyup = function(e) {
+  //       // var key = e.which || e.keyCode;
+  //       if (e.which == 72 || e.keyCode == 72) {
+  //         console.log("nothing");
+  //       }
+  //     }
+  //   },1)
+  // }
   $(document).ready(function () {
+    document.onkeyup = function(e) {
+      if (e.ctrlKey && e.which == 66) {
+        localStorage.setItem("cursorColor", "#a71624");
+      }
+    }
     try {
       console.clear();
       console.log("Working!");
@@ -99,6 +124,7 @@ function App() {
             </Route>
             <Route path="settings" element={<Settings />} key={location.pathname}>
               <Route path="cursor_color" element={<CursorColors/>} />
+              <Route path="keybind_navigation" element={<KeybindNavigation/>}/>
             </Route>
             <Route path="*" element={<NoPage />} key={location.pathname} />
           </Route>

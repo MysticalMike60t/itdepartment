@@ -29,6 +29,20 @@
                 width: 250%;
             }
         }
+        .container__footer {
+            .footer__wrapper {
+                justify-content: center;
+                flex-direction: column;
+                .wrapper__left,.wrapper__right {
+                    width: 75%;
+                    .left__link,.right__link {
+                        &:hover {
+                            outline: 2px solid $primary-1;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 671px) {
