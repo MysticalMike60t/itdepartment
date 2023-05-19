@@ -66,7 +66,7 @@ function App() {
   // }
   $(document).ready(function () {
     document.onkeyup = function(e) {
-      if (e.ctrlKey && e.which == 66) {
+      if (e.ctrlKey && e.which === 66) {
         localStorage.setItem("cursorColor", "#a71624");
       }
     }
