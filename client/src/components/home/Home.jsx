@@ -66,14 +66,14 @@ export const Home = () => {
             <div className="wrapper__left">
               {footerLinks_left.map((data, key) => {
                 return (
-                  <a href={data.link}>{data.text}</a>
+                  <a className='left__link' href={data.link}>{data.text}</a>
                 )
               })}
             </div>
             <div className="wrapper__right">
               {footerLinks_right.map((data, key) => {
                 return (
-                  <a href={data.link}>{data.text}</a>
+                  <a className='right__link' href={data.link}>{data.text}</a>
                 )
               })}
             </div>
