@@ -1,0 +1,40 @@
+"filename", "language", "Markdown", "YAML", "JavaScript", "JavaScript JSX", "CSV", "SCSS", "JSON", "HTML", "XML", "comment", "blank", "total"
+"c:\Users\finkelsteinc\Code\Github\itdepartment\.github\workflows\node.js.yml", "YAML", 0, 24, 0, 0, 0, 0, 0, 0, 0, 3, 7, 34
+"c:\Users\finkelsteinc\Code\Github\itdepartment\README.md", "Markdown", 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 53
+"c:\Users\finkelsteinc\Code\Github\itdepartment\SECURITY.md", "Markdown", 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 19
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\package-lock.json", "JSON", 0, 0, 0, 0, 0, 0, 322, 0, 0, 0, 0, 322
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\package.json", "JSON", 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 7
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\public\index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 4
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\App.js", "JavaScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 21
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\about\CarpenterTable.jsx", "JavaScript JSX", 0, 0, 0, 16, 0, 0, 0, 0, 0, 1, 0, 17
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\about\RussellTable.jsx", "JavaScript JSX", 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 12
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\about\info\Curriculum.jsx", "JavaScript JSX", 0, 0, 0, 11, 0, 0, 0, 0, 0, -30, 0, -19
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\feedback\Feedback.jsx", "JavaScript JSX", 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 3, 19
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\global\Header.jsx", "JavaScript JSX", 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 9
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\global\Layout.jsx", "JavaScript JSX", 0, 0, 0, 37, 0, 0, 0, 0, 0, 2, 2, 41
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\global\NoPage.jsx", "JavaScript JSX", 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 8
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\global\Settings.jsx", "JavaScript JSX", 0, 0, 0, 17, 0, 0, 0, 0, 0, 1, 2, 20
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\global\settings\modules\Title.jsx", "JavaScript JSX", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 2, 9
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\global\settings\pages\CursorColors.jsx", "JavaScript JSX", 0, 0, 0, 40, 0, 0, 0, 0, 0, 6, 3, 49
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\home\Home.jsx", "JavaScript JSX", 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 25
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Cna.jsx", "JavaScript JSX", 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, -2, -3
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\about\students\data.js", "JavaScript", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\global\data.js", "JavaScript", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 4
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\home\data.js", "JavaScript", 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 1, 8
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\programs\csv\15-1241.csv", "CSV", 0, 0, 0, 0, 193, 0, 0, 0, 0, 0, 1, 194
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\images\README.md", "Markdown", -6, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -7
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\images\grassotechItLogo.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, -9, 0, -1, -10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\images\logo.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, -9, 0, -1, -10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\images\logo_thick.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, -9, 0, -1, -10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\about\about.scss", "SCSS", 0, 0, 0, 0, 0, 53, 0, 0, 0, 11, 0, 64
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\about\media.scss", "SCSS", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 6
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\feedback\feedback.scss", "SCSS", 0, 0, 0, 0, 0, 106, 0, 0, 0, 0, 1, 107
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\global\dark.scss", "SCSS", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\global\functions.scss", "SCSS", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\global\header\header.scss", "SCSS", 0, 0, 0, 0, 0, 51, 0, 0, 0, 0, 1, 52
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\global\header\media.scss", "SCSS", 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 19
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\global\settings\settings.scss", "SCSS", 0, 0, 0, 0, 0, 227, 0, 0, 0, 4, 1, 232
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\global\uni.scss", "SCSS", 0, 0, 0, 0, 0, 48, 0, 0, 0, 0, 1, 49
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\home\home.scss", "SCSS", 0, 0, 0, 0, 0, 83, 0, 0, 0, 2, 1, 86
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\programs\pages.scss", "SCSS", 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 2, 31
+"Total", "-", 56, 24, 35, 197, 193, 635, 329, 4, -27, 0, 32, 1478
