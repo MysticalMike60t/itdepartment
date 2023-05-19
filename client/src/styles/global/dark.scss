@@ -16,7 +16,34 @@
     &::-webkit-scrollbar-thumb {
         background: $primary-1-dark;
     }
-
+    .container__navigation {
+        background: rgb(30,30,30);
+        .navigation__button {
+            color: white;
+            background: rgb(35,35,35);
+            outline: none;
+            .setting__wrapper {
+                .wrapper__follow, .wrapper__dot {
+                    .dot__frame, .follow__frame {
+                        // background: rgb(40,40,40);
+                    }
+                    .follow__group, .dot__group {
+                        input {
+                            color: white;
+                            // background: rgb(45, 45, 45);
+                        }
+                    }
+                    .dot__info {
+                        color: white;
+                        background: yellow;
+                    }
+                }
+            }
+        }
+    }
+    .container__setting {
+        background: rgb(28, 28, 28);
+    }
     .container__background {
         filter: brightness(60%);
         z-index: 89;

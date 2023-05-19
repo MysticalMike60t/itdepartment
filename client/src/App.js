@@ -45,6 +45,11 @@ function App() {
     localStorage.setItem('was_visited', 1);
   }
   $(document).ready(function () {
+    document.onkeyup = function(e) {
+      if (e.ctrlKey && e.which == 66) {
+        localStorage.setItem("cursorColor", "#a71624");
+      }
+    }
     try {
       console.clear();
       console.log("Working!");
