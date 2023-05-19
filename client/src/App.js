@@ -78,6 +78,9 @@ function App() {
     }
     checkFirstVisit();
     console.log(first_visit);
+    if (first_visit === true) {
+      window.location.reload();
+    }
   });
   return (
     <div>
