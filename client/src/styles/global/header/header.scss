@@ -39,7 +39,7 @@ $header-background: rgb(240, 240, 240);
                     margin: 0 0 0 0;
                     &:hover {
                         filter: brightness(200%);
-                        color: $primary-1;
+                        color: $primary-1 !important;
                     }
                     .icon {
                         display: none;
