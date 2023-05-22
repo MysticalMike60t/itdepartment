@@ -13,97 +13,88 @@
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    .container__wrapper {
+    .container__form {
         display: flex;
-        align-items: top;
-        justify-content: center;
-        width: 90%;
-        height: 100%;
-        padding: 0 0 100px 0;
-        left: 0;
-        top: 0;
-        position: relative;
-        .wrapper__form {
-            $input_background: rgb(40,40,40);
-            $input_text_color: white;
+        align-items: center;
+        justify-content: top;
+        flex-direction: column;
+        width: 40vw;
+        min-width: 500px;
+        height: auto;
+        padding: 40px;
+        margin: 10vh 0 0 0;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        background: rgb(25,25,25);
+        .form__wrapper {
+            width: 80%;
             display: flex;
-            align-items: center;
-            justify-content: top;
-            flex-direction: column;
-            min-width: 500px;
-            width: 30%;
-            margin: 20px 0 20px 0;
-            height: 900px;
-            padding: 20px 20px 20px 20px;
-            border-radius: 20px;
-            background: rgb(30, 30, 30);
+            left: 0;
+            // top: 37.5px;
+            z-index: 2;
             position: relative;
-            h1 {
+            margin: 10px;
+            pointer-events: none;
+            .wrapper__label {
                 color: white;
-                font-size: 3em;
-                margin: 0 0 20px 0;
+                // font-size: 0.9em;
+                font-size: 1.5em;
             }
-            p {
-                color: white;
+        }
+        input,textarea {
+            color: white;
+        }
+        .form__input {
+            width: 80%;
+            padding: 10px;
+            background: rgb(35,35,35);
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            position: relative;
+        }
+        .form__textarea {
+            width: 80%;
+            height: auto;
+            padding: 10px;
+            background: rgb(35,35,35);
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            position: relative;
+            resize: vertical;
+        }
+        .form__submit {
+            color: white;
+            width: 80%;
+            padding: 10px;
+            background: rgb(35,35,35);
+            outline: none;
+            border: none;
+            margin: 40px 0 0 0;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            position: relative;
+            &:hover {
+                outline: 2px solid $primary-1;
             }
-            .form__inputs {
-                width: 90%;
-                display: flex;
-                align-items: center;
-                justify-content: top;
-                flex-direction: column;
-                padding: 10px;
-                label {
-                    padding: 10px;
-                    color: white;
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    .inputs__input {
-                        background: $input_background;
-                        color: $input_text_color;
-                        width: 70%;
-                        margin: 10px 10px 30px 10px;
-                        padding: 10px;
-                        outline: none;
-                        border: none;
-                        border-radius: 5px;
-                    }
-                    .label__select {
-                        color: $input_text_color;
-                        background: $input_background;
-                        width: 70%;
-                        margin: 10px 10px 30px 10px;
-                        padding: 10px;
-                        outline: none;
-                        border: none;
-                        border-radius: 5px;
-                    }
-                    textarea {
-                        color: $input_text_color;
-                        background: $input_background;
-                        padding: 20px;
-                        height: 300px;
-                        resize: none;
-                    }
-                }
-            }
-            .form__submit {
-                color: $input_text_color;
-                background: $input_background;
-                width: 60%;
-                margin: 10px 10px 10px 10px;
-                padding: 10px;
-                outline: none;
-                border: none;
-                border-radius: 5px;
-                transition: 100ms ease all;
-                &:hover {
-                    color: white;
-                    background: $primary-1;
-                }
-            }
+        }
+        .complete_message {
+            display: none;
         }
     }
 }
