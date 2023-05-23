@@ -89,7 +89,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} key={location.pathname} />
             <Route path="contact" element={<Contact />} key={location.pathname} />
-            <Route path="programs" key={location.pathname}>
+            <Route path="jobs" key={location.pathname}>
               <Route index element={<Programs />} />
               <Route path="cirs" element={<Cirs />} />
               <Route path="cna" element={<Cna />} />

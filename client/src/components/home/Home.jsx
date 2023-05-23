@@ -56,7 +56,7 @@ export const Home = () => {
           <span className="wrapper__background"></span>
         </div>
         <div className="container__actions" id="actions">
-          <Link className="actions__button" to="/programs"><span>Programs</span></Link>
+          <Link className="actions__button" to="/jobs"><span>Jobs</span></Link>
           <Link className="actions__button" to="/info"><span>Info</span></Link>
           <Link className="actions__button" to="/contact"><span>Contact</span></Link>
         </div>
