@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 
 const Feedback = () => {
     const form = useRef();
+    let errMes;
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -11,9 +12,11 @@ const Feedback = () => {
         emailjs.sendForm('service_fta2cg8', 'template_dg7zngu', form.current, 'h9SNBTG1l1E3UEXDy')
             .then((result) => {
                 console.log(result.text);
-                $(".complete_message").css({display:"block"});
+                $(".complete_message").css({display:"flex"});
             }, (error) => {
+                errMes = error.text;
                 console.log(error.text);
+                $(".incomplete_message").css({display:"flex"});
             });
     };
     return (
@@ -22,18 +25,21 @@ const Feedback = () => {
                 <div className="form__wrapper">
                     <label className='wrapper__label'>Name</label>
                 </div>
-                <input type="text" name="user_name" className='form__input'/>
+                <input type="text" name="user_name" className='form__input' required="true"/>
                 <div className="form__wrapper">
                     <label className='wrapper__label'>Email</label>
                 </div>
-                <input type="email" name="user_email" className='form__input' />
+                <input type="email" name="user_email" className='form__input' required={true} />
                 <div className="form__wrapper">
                     <label className='wrapper__label'>Message</label>
                 </div>
-                <textarea name="message" className='form__textarea' />
+                <textarea name="message" className='form__textarea'  required={true}/>
                 <input type="submit" value="Send" className='form__submit' />
                 <div className="complete_message">
-                    <p>Complete!</p>
+                    <p>Feedback Sent</p>
+                </div>
+                <div className="incomplete_message">
+                    <p>Error: {errMes}</p>
                 </div>
             </form>
         </div>
