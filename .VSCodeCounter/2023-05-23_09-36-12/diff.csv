@@ -1,0 +1,70 @@
+"filename", "language", "SCSS", "JavaScript", "CSV", "JavaScript JSX", "JSON", "comment", "blank", "total"
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\App.js", "JavaScript", 0, 3, 0, 0, 0, 0, 0, 3
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\about\info\Uniforms.jsx", "JavaScript JSX", 0, 0, 0, -1, 0, 0, 1, 0
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\feedback\Feedback.jsx", "JavaScript JSX", 0, 0, 0, 30, 0, 0, 2, 32
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\global\Settings.jsx", "JavaScript JSX", 0, 0, 0, -2, 0, 2, 0, 0
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\global\settings\pages\KeybindNavigation.jsx", "JavaScript JSX", 0, 0, 0, -1, 0, 0, 0, -1
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\home\Home.jsx", "JavaScript JSX", 0, 0, 0, 2, 0, 0, 0, 2
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\Jobs.jsx", "JavaScript JSX", 0, 0, 0, 25, 0, 0, 3, 28
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\modules\Card.jsx", "JavaScript JSX", 0, 0, 0, 10, 0, 0, 2, 12
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Cirs.jsx", "JavaScript JSX", 0, 0, 0, 39, 0, 0, 4, 43
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Cna.jsx", "JavaScript JSX", 0, 0, 0, 24, 0, 0, 2, 26
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Cp.jsx", "JavaScript JSX", 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Csa.jsx", "JavaScript JSX", 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Css.jsx", "JavaScript JSX", 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Da.jsx", "JavaScript JSX", 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Isa.jsx", "JavaScript JSX", 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Ncsa.jsx", "JavaScript JSX", 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Sd.jsx", "JavaScript JSX", 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\Wd.jsx", "JavaScript JSX", 0, 0, 0, 26, 0, 0, 4, 30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\comps\Para.jsx", "JavaScript JSX", 0, 0, 0, 11, 0, 0, 2, 13
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\cirs.json", "JSON", 0, 0, 0, 0, 11, 0, 0, 11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\cna.json", "JSON", 0, 0, 0, 0, 10, 0, 0, 10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\cp.json", "JSON", 0, 0, 0, 0, 8, 0, 0, 8
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\csa.json", "JSON", 0, 0, 0, 0, 10, 0, 0, 10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\css.json", "JSON", 0, 0, 0, 0, 11, 0, 0, 11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\da.json", "JSON", 0, 0, 0, 0, 11, 0, 0, 11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\isa.json", "JSON", 0, 0, 0, 0, 10, 0, 0, 10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\ncsa.json", "JSON", 0, 0, 0, 0, 10, 0, 0, 10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\sd.json", "JSON", 0, 0, 0, 0, 11, 0, 0, 11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\jobs\pages\json\wd.json", "JSON", 0, 0, 0, 0, 11, 0, 0, 11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\Programs.jsx", "JavaScript JSX", 0, 0, 0, -25, 0, 0, -3, -28
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\modules\Card.jsx", "JavaScript JSX", 0, 0, 0, -10, 0, 0, -2, -12
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Cirs.jsx", "JavaScript JSX", 0, 0, 0, -39, 0, 0, -4, -43
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Cna.jsx", "JavaScript JSX", 0, 0, 0, -24, 0, 0, -2, -26
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Cp.jsx", "JavaScript JSX", 0, 0, 0, -26, 0, 0, -4, -30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Csa.jsx", "JavaScript JSX", 0, 0, 0, -26, 0, 0, -4, -30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Css.jsx", "JavaScript JSX", 0, 0, 0, -26, 0, 0, -4, -30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Da.jsx", "JavaScript JSX", 0, 0, 0, -26, 0, 0, -4, -30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Isa.jsx", "JavaScript JSX", 0, 0, 0, -26, 0, 0, -4, -30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Ncsa.jsx", "JavaScript JSX", 0, 0, 0, -26, 0, 0, -4, -30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Sd.jsx", "JavaScript JSX", 0, 0, 0, -26, 0, 0, -4, -30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\Wd.jsx", "JavaScript JSX", 0, 0, 0, -26, 0, 0, -4, -30
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\comps\Para.jsx", "JavaScript JSX", 0, 0, 0, -11, 0, 0, -2, -13
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\cirs.json", "JSON", 0, 0, 0, 0, -11, 0, 0, -11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\cna.json", "JSON", 0, 0, 0, 0, -10, 0, 0, -10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\cp.json", "JSON", 0, 0, 0, 0, -8, 0, 0, -8
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\csa.json", "JSON", 0, 0, 0, 0, -10, 0, 0, -10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\css.json", "JSON", 0, 0, 0, 0, -11, 0, 0, -11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\da.json", "JSON", 0, 0, 0, 0, -11, 0, 0, -11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\isa.json", "JSON", 0, 0, 0, 0, -10, 0, 0, -10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\ncsa.json", "JSON", 0, 0, 0, 0, -10, 0, 0, -10
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\sd.json", "JSON", 0, 0, 0, 0, -11, 0, 0, -11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\components\programs\pages\json\wd.json", "JSON", 0, 0, 0, 0, -11, 0, 0, -11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\about\uniforms\data.js", "JavaScript", 0, 1, 0, 0, 0, 0, 0, 1
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\jobs\csv\15-1241.csv", "CSV", 0, 0, 193, 0, 0, 0, 1, 194
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\jobs\data.js", "JavaScript", 0, 13, 0, 0, 0, 1, 1, 15
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\programs\csv\15-1241.csv", "CSV", 0, 0, -193, 0, 0, 0, -1, -194
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\data\programs\data.js", "JavaScript", 0, -13, 0, 0, 0, -1, -1, -15
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\feedback\feedback.scss", "SCSS", 76, 0, 0, 0, 0, 2, -1, 77
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\global\dark.scss", "SCSS", 21, 0, 0, 0, 0, 0, 0, 21
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\global\vars.scss", "SCSS", 9, 0, 0, 0, 0, 1, 1, 11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\home\home.scss", "SCSS", 19, 0, 0, 0, 0, 0, 0, 19
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\home\media.scss", "SCSS", 22, 0, 0, 0, 0, 0, 0, 22
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\jobs\jobs.scss", "SCSS", 73, 0, 0, 0, 0, 7, 0, 80
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\jobs\media.scss", "SCSS", 35, 0, 0, 0, 0, 0, 0, 35
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\jobs\pages.scss", "SCSS", 62, 0, 0, 0, 0, 0, 2, 64
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\programs\media.scss", "SCSS", -11, 0, 0, 0, 0, 0, 0, -11
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\programs\pages.scss", "SCSS", -62, 0, 0, 0, 0, 0, -2, -64
+"c:\Users\finkelsteinc\Code\Github\itdepartment\client\src\styles\programs\programs.scss", "SCSS", -73, 0, 0, 0, 0, -7, 0, -80
+"Total", "-", 171, 4, 0, 28, 0, 5, 3, 211
