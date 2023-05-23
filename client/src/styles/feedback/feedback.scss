@@ -28,8 +28,11 @@
         -moz-border-radius: 20px;
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
-        background: rgb(25,25,25);
+        background: rgb(245,245,245);
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.02);
+        outline: 1px solid rgb(175,175,175);
         h1 {
+            color: black;
             margin: 0 0 50px 0;
             padding: 0;
         }
@@ -43,19 +46,19 @@
             margin: 10px;
             pointer-events: none;
             .wrapper__label {
-                color: white;
+                color: black;
                 // font-size: 0.9em;
                 font-size: 1.5em;
             }
         }
         input,textarea {
-            color: white;
+            outline: 1px solid rgb(175,175,175);
+            color: black;
+            background: rgb(255,255,255);
         }
         .form__input {
             width: 80%;
             padding: 10px;
-            background: rgb(35,35,35);
-            outline: none;
             border: none;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -68,8 +71,6 @@
             width: 80%;
             height: auto;
             padding: 10px;
-            background: rgb(35,35,35);
-            outline: none;
             border: none;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -80,10 +81,9 @@
             resize: vertical;
         }
         .form__submit {
-            color: white;
-            width: 80%;
+            color: black;
+            width: 60%;
             padding: 10px;
-            background: rgb(35,35,35);
             outline: 2px solid rgba(0,0,0,0.1);
             border: none;
             margin: 40px 0 0 0;
