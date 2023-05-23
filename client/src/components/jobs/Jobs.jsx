@@ -2,18 +2,18 @@ import React from 'react'
 import $ from "jquery";
 
 import Card from "./modules/Card";
-import { programCardData } from '../../data/programs/data';
+import { programCardData } from '../../data/jobs/data';
 
-const Programs = () => {
+const Jobs = () => {
   $(document).ready(function() {
     if (localStorage.getItem("theme") === "light") {
-      $(".programs__container").removeClass("dark");
+      $(".jobs__container").removeClass("dark");
     } else {
-      $(".programs__container").addClass("dark");
+      $(".jobs__container").addClass("dark");
     }
   });
   return (
-    <div className="programs__container container dark">
+    <div className="jobs__container container dark">
         <div className="container__wrapper">
           {programCardData.map((data,key)=>{
             return(
@@ -25,4 +25,4 @@ const Programs = () => {
   )
 }
 
-export default Programs
+export default Jobs

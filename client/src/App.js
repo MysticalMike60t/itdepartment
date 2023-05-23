@@ -8,22 +8,22 @@ import Layout from './components/global/Layout';
 
 import Home from './components/home/Home';
 import Contact from './components/contact/Contact';
-import Programs from './components/programs/Programs';
+import Jobs from './components/jobs/Jobs';
 import About from "./components/about/About";
 import Feedback from './components/feedback/Feedback';
 import Settings from './components/global/Settings';
 import CursorColors from './components/global/settings/pages/CursorColors';
 import KeybindNavigation from "./components/global/settings/pages/KeybindNavigation";
-import Cirs from './components/programs/pages/Cirs';
-import Cna from "./components/programs/pages/Cna";
-import Cp from "./components/programs/pages/Cp";
-import Css from "./components/programs/pages/Css";
-import Csa from "./components/programs/pages/Csa";
-import Da from "./components/programs/pages/Da";
-import Isa from "./components/programs/pages/Isa";
-import Ncsa from "./components/programs/pages/Ncsa";
-import Sd from "./components/programs/pages/Sd";
-import Wd from "./components/programs/pages/Wd";
+import Cirs from './components/jobs/pages/Cirs';
+import Cna from "./components/jobs/pages/Cna";
+import Cp from "./components/jobs/pages/Cp";
+import Css from "./components/jobs/pages/Css";
+import Csa from "./components/jobs/pages/Csa";
+import Da from "./components/jobs/pages/Da";
+import Isa from "./components/jobs/pages/Isa";
+import Ncsa from "./components/jobs/pages/Ncsa";
+import Sd from "./components/jobs/pages/Sd";
+import Wd from "./components/jobs/pages/Wd";
 import RussellTable from './components/about/RussellTable';
 import CarpenterTable from './components/about/CarpenterTable';
 import RussellInfo from "./components/about/info/RussellInfo";
@@ -90,7 +90,7 @@ function App() {
             <Route index element={<Home />} key={location.pathname} />
             <Route path="contact" element={<Contact />} key={location.pathname} />
             <Route path="jobs" key={location.pathname}>
-              <Route index element={<Programs />} />
+              <Route index element={<Jobs />} />
               <Route path="cirs" element={<Cirs />} />
               <Route path="cna" element={<Cna />} />
               <Route path="cp" element={<Cp />} />
