@@ -72,12 +72,23 @@
         }
     }
 }
+@media screen and (max-height: 630px) {
+    .home__container {
+        .head__container {
+            .container__wrapper {
+                .wrapper__title {
+                    margin: 10% 0 0 0;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-height: 570px) {
     .home__container {
         .head__container {
             .container__wrapper {
-                h1 {
-                    top: 10%;
+                .wrapper__title {
+                    margin: 10% 0 0 0;
                 }
             }
         }
@@ -87,8 +98,8 @@
     .home__container {
         .head__container {
             .container__wrapper {
-                h1 {
-                    top: 20%;
+                .wrapper__title {
+                    margin: 20% 0 0 0;
                 }
             }
         }
@@ -98,8 +109,19 @@
     .home__container {
         .head__container {
             .container__wrapper {
-                h1 {
-                    top: 25%;
+                .wrapper__title {
+                    margin: 25% 0 0 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-height: 300px) {
+    .home__container {
+        .head__container {
+            .container__wrapper {
+                .wrapper__title {
+                    margin: 30% 0 0 0;
                 }
             }
         }
