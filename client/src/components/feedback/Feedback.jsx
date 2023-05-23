@@ -1,16 +1,48 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import $ from "jquery";
+import emailjs from '@emailjs/browser';
 
 const Feedback = () => {
+    const form = useRef();
+    let errMes;
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_fta2cg8', 'template_dg7zngu', form.current, 'h9SNBTG1l1E3UEXDy')
+            .then((result) => {
+                console.log(result.text);
+                $(".complete_message").css({display:"flex"});
+            }, (error) => {
+                errMes = error.text;
+                console.log(error.text);
+                $(".incomplete_message").css({display:"flex"});
+            });
+    };
     return (
         <div className="feedback__container container dark">
-            <div className="container__wrapper">
-                <form className="wrapper__form" name="feedback_form"> {/* onSubmit={saveUserFeedback()} */}
-                    <h1>Feedback</h1>
-                    <p>This Section is not currently working.</p>
-                </form>
-            </div>
-            <br />
-            <br />
+            <form ref={form} onSubmit={sendEmail} className='container__form'>
+                <h1>Feedback</h1>
+                <div className="form__wrapper">
+                    <label className='wrapper__label'>Name</label>
+                </div>
+                <input type="text" name="user_name" className='form__input' required="true"/>
+                <div className="form__wrapper">
+                    <label className='wrapper__label'>Email</label>
+                </div>
+                <input type="email" name="user_email" className='form__input' required={true} />
+                <div className="form__wrapper">
+                    <label className='wrapper__label'>Message</label>
+                </div>
+                <textarea name="message" className='form__textarea'  required={true}/>
+                <input type="submit" value="Send" className='form__submit' />
+                <div className="complete_message">
+                    <p>Feedback Sent</p>
+                </div>
+                <div className="incomplete_message">
+                    <p>Error: {errMes}</p>
+                </div>
+            </form>
         </div>
     )
 }

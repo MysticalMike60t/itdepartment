@@ -1,0 +1,35 @@
+@media screen and (max-width: 910px) {
+    .jobs__container {
+        .container__wrapper {
+            flex-direction: column;
+            align-content:center;
+            .cards__card {
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+@media screen and (max-height: 660px) {
+    .jobs__container {
+        .container__wrapper {
+            padding-top: 5%;
+            margin: 0;
+        }
+    }
+}
+@media screen and (max-height: 570px) {
+    .jobs__container {
+        .container__wrapper {
+            padding-top: 2.5%;
+            margin: 0;
+        }
+    }
+}
+@media screen and (max-height: 530px) {
+    .jobs__container {
+        .container__wrapper {
+            padding-top: 0%;
+            margin: 0;
+        }
+    }
+}

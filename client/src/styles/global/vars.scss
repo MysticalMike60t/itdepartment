@@ -7,6 +7,17 @@ $primary-2: #5386E4;
 $primary-3: #6F58C9;
 $dark-1: rgb(50,50,50);
 $light-1: rgb(240,240,240);
+// $green-1: #59FFA0;
+$green-1: rgba(64, 197, 121, 0.95);
+$green-1-t: rgba(90, 241, 155, 0.705);
+$green-2: #0b4223;
+$red-1: #D64550;
+$red-2: #ff7e89a2;
+$red-3: #c74953bb;
+$red-4: #571a1f;
+
+$success: $green-1;
+$success-t: $green-1-t;
 
 $home-background: $light-1;
 $header-background: $home-background;

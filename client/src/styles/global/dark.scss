@@ -4,6 +4,27 @@
             color: white;
         }
     }
+    .container__form {
+        color: white;
+        background: rgb(25,25,25);
+        outline: 1px solid rgb(50,50,50);
+        h1 {
+            color: white;
+        }
+        .form__wrapper {
+            .wrapper__label {
+                color: white;
+            }
+        }
+        input,textarea {
+            outline: 1px solid rgb(50,50,50);
+            color: white;
+            background: rgb(35,35,35);
+        }
+        .form__submit {
+            color: white;
+        }
+    }
     .container {
         background: rgb(35,35,35);
     }
