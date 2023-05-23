@@ -22,6 +22,7 @@ const Feedback = () => {
     return (
         <div className="feedback__container container dark">
             <form ref={form} onSubmit={sendEmail} className='container__form'>
+                <h1>Feedback</h1>
                 <div className="form__wrapper">
                     <label className='wrapper__label'>Name</label>
                 </div>
