@@ -1,8 +1,10 @@
 import React, { useRef } from 'react'
 import $ from "jquery";
 import emailjs from '@emailjs/browser';
+import { useNavigate } from "react-router-dom";
 
 const Feedback = () => {
+    const navigate = useNavigate();
     const form = useRef();
     let errMes;
 
@@ -13,7 +15,7 @@ const Feedback = () => {
             .then((result) => {
                 console.log(result.text);
                 $(".complete_message").css({display:"flex"});
-                location.reload();
+                navigate("/");
             }, (error) => {
                 errMes = error.text;
                 console.log(error.text);
