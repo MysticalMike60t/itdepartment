@@ -13,6 +13,7 @@ const Feedback = () => {
             .then((result) => {
                 console.log(result.text);
                 $(".complete_message").css({display:"flex"});
+                location.reload();
             }, (error) => {
                 errMes = error.text;
                 console.log(error.text);
