@@ -1,10 +1,8 @@
 import React, { useRef } from 'react'
 import $ from "jquery";
 import emailjs from '@emailjs/browser';
-import { useNavigate } from "react-router-dom";
 
 const Feedback = () => {
-    const navigate = useNavigate();
     const form = useRef();
     let errMes;
 
@@ -19,7 +17,6 @@ const Feedback = () => {
                     $.getJSON("https://api.ipify.org?format=json", function (data) {
                         localStorage.setItem("ip", data.ip);
                     })
-                    // navigate("/");
                 }, (error) => {
                     errMes = error.text;
                     console.log(error.text);
@@ -40,7 +37,7 @@ const Feedback = () => {
             $(".form__submit").remove();
 
             errMes = "Already Submitted Feedback";
-            $(".incomplete_message").css({display: "block"});
+            $(".incomplete_message").css({ display: "block" });
             $(".incomplete_message>p").append(errMes);
         }
     })

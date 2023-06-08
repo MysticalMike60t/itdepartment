@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NoPage = () => {
   let loc = window.location.pathname;
-  $(document).ready(function(){
+  $(document).ready(function () {
     if (localStorage.getItem("theme") === "light") {
       $(".nopage").removeClass("dark");
     } else {
