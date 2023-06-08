@@ -33,7 +33,7 @@ const Layout = () => {
   }
   setInterval(() => {
     const currUrl = window.location.href;
-    if (currUrl != prevUrl) {
+    if (currUrl !== prevUrl) {
       prevUrl = currUrl;
       console.log(`URL changed to : ${currUrl}`);
       cursor_change();

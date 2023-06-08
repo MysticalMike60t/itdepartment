@@ -23,7 +23,6 @@ const Curriculum = () => {
           )
         })}
       </div>
-      {/* <div className="learing__seperator"></div> */}
       {cards.map((data,key)=>{
         return(
           <div className="card" key={key}>

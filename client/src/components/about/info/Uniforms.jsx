@@ -4,9 +4,6 @@ import $ from "jquery"
 import {uniforms, layout} from '../../../data/about/uniforms/data';
 
 const Uniforms = () => {
-  /*useEffect(()=>{
-    document.getElementById(data.id).onclick = function() { window.open(data.link) }
-  })*/
   $("#0").css({opacity:"0","pointer-events":"none"});
   return (
     <div className="instance">

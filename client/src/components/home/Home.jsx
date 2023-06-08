@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
@@ -13,7 +13,6 @@ import bgVideo003 from "../../assets/videos/production ID_4167404.mp4";
 import bgVideo004 from "../../assets/videos/video.mp4";
 
 export const Home = () => {
-  let [cursorColor, setCursorColor] = useState('');
   const vids = [
     bgVideo001,
     bgVideo002,
