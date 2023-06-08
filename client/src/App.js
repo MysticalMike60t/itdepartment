@@ -57,7 +57,6 @@ function App() {
       console.log(e);
     }
     checkFirstVisit();
-    console.log(first_visit);
     for (let i; i < 1; i++) {
       window.location.reload();
     }

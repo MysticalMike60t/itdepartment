@@ -13,7 +13,18 @@ const Layout = () => {
 
   const cursor_hover = { filter: "hue-rotate(210deg) brightness(300%)" };
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
+
+
+  var first_visit = false;
+  const checkFirstVisit = () => {
+    if (localStorage.getItem('was_visited')) {
+      return;
+    }
+    first_visit = true;
+    localStorage.setItem("theme", "dark");
+    localStorage.setItem('was_visited', 1);
+  }
 
   const cursor_change = () => {
     $(".cursor").css({ background: default_cursor_color });
@@ -35,7 +46,7 @@ const Layout = () => {
     const currUrl = window.location.href;
     if (currUrl !== prevUrl) {
       prevUrl = currUrl;
-      console.log(`URL changed to : ${currUrl}`);
+      // console.log(`URL changed to : ${currUrl}`);
       cursor_change();
     }
   }, 60);
@@ -53,6 +64,7 @@ const Layout = () => {
     }
   });
   $(document).ready(function () {
+    checkFirstVisit();
     $(".cursor").css({ background: default_cursor_color });
     $(".cursor-follow").css({ background: default_cursor_follow_color });
     if (isMobile) {
@@ -75,7 +87,7 @@ const Layout = () => {
       })
     }
     $(".wrapper__theme").unbind().click(function () {
-      if (theme === 'light') {
+      if (theme === 'light' || !localStorage.getItem("theme") || localStorage.getItem("theme") === "" || localStorage.getItem("theme") === " ") {
         setTheme('dark');
         $(".container").addClass("dark");
         localStorage.setItem("theme", "dark");
