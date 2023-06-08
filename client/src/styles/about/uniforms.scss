@@ -47,5 +47,8 @@
                 color: white;
             }
         }
+        &:last-of-type {
+            visibility: hidden;
+        }
     }
 }

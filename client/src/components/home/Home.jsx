@@ -29,13 +29,18 @@ export const Home = () => {
       $(".home__container").addClass("dark");
       $(".head__container").addClass("dark");
     }
-    setInterval(() => {
+    if (window.innerWidth <= 1345) {
+      $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.shortenedText) }));
+    } else {
+      $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.text) }));
+    }
+    $(window).resize(function(){
       if (window.innerWidth <= 1345) {
         $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.shortenedText) }));
       } else {
         $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.text) }));
       }
-    }, 1);
+    });
   });
   return (
     <div className="home__container container dark" style={style}>
@@ -64,14 +69,14 @@ export const Home = () => {
             <div className="wrapper__left">
               {footerLinks_left.map((data, key) => {
                 return (
-                  <a className='left__link' href={data.link}>{data.text}</a>
+                  <a className='left__link' href={data.link} key={key}>{data.text}</a>
                 )
               })}
             </div>
             <div className="wrapper__right">
               {footerLinks_right.map((data, key) => {
                 return (
-                  <a className='right__link' href={data.link}>{data.text}</a>
+                  <a className='right__link' href={data.link} key={key}>{data.text}</a>
                 )
               })}
             </div>
