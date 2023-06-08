@@ -45,27 +45,8 @@ function App() {
     localStorage.setItem("theme", "dark");
     localStorage.setItem('was_visited', 1);
   }
-  // if (localStorage.getItem("keybindActivation")==="true") {
-  //   setInterval(function(){
-  //     document.onkeyup = function(e) {
-  //       // var key = e.which || e.keyCode;
-  //       if (e.which == 72 || e.keyCode == 72) {
-  //         window.location.pathname="/";
-  //       }
-  //     }
-  //   },1)
-  // } else if (localStorage.getItem("keybindActivation")==="false") {
-  //   setInterval(function(){
-  //     document.onkeyup = function(e) {
-  //       // var key = e.which || e.keyCode;
-  //       if (e.which == 72 || e.keyCode == 72) {
-  //         console.log("nothing");
-  //       }
-  //     }
-  //   },1)
-  // }
   $(document).ready(function () {
-    document.onkeyup = function(e) {
+    document.onkeyup = function (e) {
       if (e.ctrlKey && e.which === 66) {
         localStorage.setItem("cursorColor", "#a71624");
       }
@@ -78,9 +59,7 @@ function App() {
     }
     checkFirstVisit();
     console.log(first_visit);
-    if (first_visit === true) {
-      window.location.reload();
-    }
+    window.location.reload();
   });
   return (
     <div>
@@ -126,8 +105,8 @@ function App() {
               <Route index element={<Feedback />} />
             </Route>
             <Route path="settings" element={<Settings />} key={location.pathname}>
-              <Route path="cursor_color" element={<CursorColors/>} />
-              <Route path="keybind_navigation" element={<KeybindNavigation/>}/>
+              <Route path="cursor_color" element={<CursorColors />} />
+              <Route path="keybind_navigation" element={<KeybindNavigation />} />
             </Route>
             <Route path="*" element={<NoPage />} key={location.pathname} />
           </Route>
