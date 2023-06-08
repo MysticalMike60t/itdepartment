@@ -5,6 +5,8 @@ import { isMobile } from 'react-device-detect';
 
 import Header from './Header'
 
+import homeHeadTitleData from "../../data/home/head/data";
+
 const Layout = () => {
   var first_visit = false;
 
@@ -49,6 +51,11 @@ const Layout = () => {
       // console.log(`URL changed to : ${currUrl}`);
       setTheme(localStorage.getItem("theme"));
       cursor_change();
+      if (window.innerWidth <= 1345) {
+        $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.shortenedText) }));
+      } else {
+        $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.text) }));
+      }
     }
   }, 60);
   $(document).mousemove(function (e) {
