@@ -23,7 +23,7 @@ export const Home = () => {
   let vidOut = vids[Math.floor(Math.random() * 4)];
   let style = { background: "$primary-1" };
   $(document).ready(function () {
-    setInterval(function () {
+    setInterval(function(){
       if (localStorage.getItem("theme") === "light") {
         $(".home__container").removeClass("dark");
         $(".head__container").removeClass("dark");
@@ -31,7 +31,7 @@ export const Home = () => {
         $(".home__container").addClass("dark");
         $(".head__container").addClass("dark");
       }
-    }, 1000);
+    },1000);
     if (localStorage.getItem("theme") === "light") {
       $(".home__container").removeClass("dark");
       $(".head__container").removeClass("dark");
@@ -53,21 +53,20 @@ export const Home = () => {
     });
     if (isMobile) {
       $(".wrapper__a").css({ display: "none" });
-      $(".background__video").css({ display: "none" });
     }
   });
   return (
     <div className="home__container container dark" style={style}>
       <div className="head__container" id="h">
         <div className="container__background">
-          <video src={vidOut} class="background__video" type="video/mp4" autoPlay muted loop />
+          <video src={vidOut} type="video/mp4" autoPlay muted loop />
         </div>
         <div className="container__wrapper">
           <div className="wrapper__title">
             <h1 className="title__h1">_</h1>
           </div>
           <h2 className='wrapper__h2'>{homeHeadTitleData.map((data) => { return (data.subText) })}</h2>
-          <a className='wrapper__a' href="#actions" name="Go Down">
+          <a className='wrapper__a' href="#actions">
             <ArrowDropDownIcon className="a__icon" />
           </a>
           <span className="wrapper__background"></span>
