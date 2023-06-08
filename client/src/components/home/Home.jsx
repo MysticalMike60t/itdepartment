@@ -67,7 +67,7 @@ export const Home = () => {
             <h1 className="title__h1">_</h1>
           </div>
           <h2 className='wrapper__h2'>{homeHeadTitleData.map((data) => { return (data.subText) })}</h2>
-          <a className='wrapper__a' href="#actions">
+          <a className='wrapper__a' href="#actions" name="Go Down">
             <ArrowDropDownIcon className="a__icon" />
           </a>
           <span className="wrapper__background"></span>
