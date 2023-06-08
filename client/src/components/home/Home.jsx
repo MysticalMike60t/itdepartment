@@ -1,6 +1,7 @@
 import { React } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import { isMobile } from 'react-device-detect';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
@@ -34,13 +35,16 @@ export const Home = () => {
     } else {
       $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.text) }));
     }
-    $(window).resize(function(){
+    $(window).resize(function () {
       if (window.innerWidth <= 1345) {
         $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.shortenedText) }));
       } else {
         $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.text) }));
       }
     });
+    if (isMobile) {
+      $(".wrapper__a").css({ display: "none" });
+    }
   });
   return (
     <div className="home__container container dark" style={style}>
