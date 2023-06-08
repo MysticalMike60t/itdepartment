@@ -7,9 +7,7 @@ import Header from './Header'
 
 const Layout = () => {
   const default_cursor_color = localStorage.getItem("cursorColor");
-  // const default_cursor_color_hover = localStorage.getItem("cursorColor");
   const default_cursor_follow_color = localStorage.getItem("cursorColor");
-  // const default_cursor_follow_color_hover = localStorage.getItem("cursorColor");
 
   const [theme, setTheme] = useState('light');
   $(document).mousemove(function (e) {

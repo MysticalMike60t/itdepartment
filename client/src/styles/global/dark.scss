@@ -45,13 +45,9 @@
             outline: none;
             .setting__wrapper {
                 .wrapper__follow, .wrapper__dot {
-                    .dot__frame, .follow__frame {
-                        // background: rgb(40,40,40);
-                    }
                     .follow__group, .dot__group {
                         input {
                             color: white;
-                            // background: rgb(45, 45, 45);
                         }
                     }
                     .dot__info {

@@ -10,7 +10,6 @@ const russellStudents = [
     { firstName: "Simeon", lastName: "Richards", age: "15", grade: "9" },
     { firstName: "Jacques", lastName: "Pacheco", age: "14", grade: "9" },
     { firstName: "Bruno", lastName: "Bloggs", age: "15", grade: "9" }
-    // {firstName: "", lastName: "", age: "", grade: ""}
 ]
 const carpenterStudents = [
     { firstName: "Joel", lastName: "Connolly", age: "15", grade: "9" },
@@ -18,7 +17,6 @@ const carpenterStudents = [
     { firstName: "Huey", lastName: "Harmon", age: "15", grade: "9" },
     { firstName: "Blaine", lastName: "Guerrero", age: "15", grade: "9" },
     { firstName: "Arlene", lastName: "Barrera", age: "15", grade: "9" }
-    // {firstName: "", lastName: "", age: "", grade: ""}
 ]
 
 // Sorting

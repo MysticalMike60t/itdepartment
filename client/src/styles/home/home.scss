@@ -3,12 +3,8 @@ $background: $primary-1;
 .home__container {
     display: flex;
     justify-content: center;
-    // width: calc(100vw - $header-width);
     width: 100vw;
     height: 100vh;
-    //height: calc(100vh - $header-height);
-    // left: $header-width;
-    //top: $header-height;
     top: 0;
     margin: 0;
     padding: 0;
@@ -38,16 +34,9 @@ $background: $primary-1;
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        // border-radius: 400px;
         left: 0;
         top: 0;
-        // margin: 5vh 0 0 0;
         padding: 0;
-        //background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../../assets/videos/Pexels Videos 2278095.mp4");
-        //background-position: center;
-        //background-repeat: no-repeat;
-        //background-size: cover;
-        // background: $primary-1;
         position: relative;
         overflow: hidden;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -188,8 +177,6 @@ $background: $primary-1;
                 padding: 20px;
                 .left__link,
                 .right__link {
-                    //border-right: 1px solid white;
-                    //border-left: 1px solid white;
                     padding: 20px;
                     border-radius: 10px;
                     margin-bottom: 10px;

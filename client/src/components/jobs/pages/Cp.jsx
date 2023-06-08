@@ -19,8 +19,6 @@ function Cp() {
           <Para title={jName.title_1} text={jName.text_1} />
           <Para title={jName.title_2} text={jName.text_2}/>
           <Para title={jName.title_3} text={jName.text_3}/>
-          { // <Para title="" text=""/>
-          }
         </div>
     </div>
   );

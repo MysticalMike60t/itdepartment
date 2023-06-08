@@ -1,7 +1,4 @@
 .settings__container {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     background: rgb(250, 250, 250);
     position: relative;
     display: flex;
@@ -57,7 +54,6 @@
             justify-content: center;
             flex-direction: column;
             padding: 20px;
-            // background: red;
             .wrapper__title {
                 margin: 2.5vh 0 0 0;
                 text-align: center;
@@ -96,7 +92,6 @@
                     width: 10%;
                     input {
                         text-align: center;
-                        // color: black;
                         color: white;
                         width: 100%;
                         background: rgb(45, 45, 45);
