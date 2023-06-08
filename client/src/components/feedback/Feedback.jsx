@@ -1,8 +1,10 @@
 import React, { useRef } from 'react'
 import $ from "jquery";
 import emailjs from '@emailjs/browser';
+import { useNavigate } from "react-router-dom";
 
 const Feedback = () => {
+    const navigate = useNavigate();
     const form = useRef();
     let errMes;
 
@@ -12,7 +14,8 @@ const Feedback = () => {
         emailjs.sendForm('service_fta2cg8', 'template_dg7zngu', form.current, 'h9SNBTG1l1E3UEXDy')
             .then((result) => {
                 console.log(result.text);
-                $(".complete_message").css({ display: "flex" });
+                $(".complete_message").css({display:"flex"});
+                navigate("/");
             }, (error) => {
                 errMes = error.text;
                 console.log(error.text);
