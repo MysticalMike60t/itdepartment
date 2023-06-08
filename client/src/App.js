@@ -12,7 +12,6 @@ import About from "./components/about/About";
 import Feedback from './components/feedback/Feedback';
 import Settings from './components/global/Settings';
 import CursorColors from './components/global/settings/pages/CursorColors';
-import KeybindNavigation from "./components/global/settings/pages/KeybindNavigation";
 import Cirs from './components/jobs/pages/Cirs';
 import Cna from "./components/jobs/pages/Cna";
 import Cp from "./components/jobs/pages/Cp";
@@ -48,6 +47,7 @@ function App() {
     document.onkeyup = function (e) {
       if (e.ctrlKey && e.which === 66) {
         localStorage.setItem("cursorColor", "#a71624");
+        window.location.reload();
       }
     }
     try {
@@ -106,7 +106,6 @@ function App() {
           </Route>
           <Route path="settings" element={<Settings />} key={location.pathname}>
             <Route path="cursor_color" element={<CursorColors />} />
-            <Route path="keybind_navigation" element={<KeybindNavigation />} />
           </Route>
           <Route path="*" element={<NoPage />} key={location.pathname} />
         </Route>
