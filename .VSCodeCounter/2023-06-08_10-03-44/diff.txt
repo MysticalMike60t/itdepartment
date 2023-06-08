@@ -1,0 +1,39 @@
+Date : 2023-06-08 10:03:44
+Directory : c:\Users\finkelsteinc\Code\Github\itdepartment\client\src
+Total : 8 files,  -17765 codes, 0 comments, -8 blanks, all -17773 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Properties |          1 |         -1 |          0 |          0 |         -1 |
+| Markdown   |          2 |         -8 |          0 |         -1 |         -9 |
+| XML        |          1 |         -9 |          0 |         -1 |        -10 |
+| HTML       |          1 |        -58 |          0 |         -3 |        -61 |
+| JSON       |          3 |    -17,689 |          0 |         -3 |    -17,692 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                              | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                 |          8 |    -17,765 |          0 |         -8 |    -17,773 |
+| ..                                                                                |          8 |    -17,765 |          0 |         -8 |    -17,773 |
+| .. (Files)                                                                        |          4 |    -17,673 |          0 |         -3 |    -17,676 |
+| ..\public                                                                         |          4 |        -92 |          0 |         -5 |        -97 |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                          | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\finkelsteinc\Code\Github\itdepartment\client\.env                        | Properties |         -1 |          0 |          0 |         -1 |
+| c:\Users\finkelsteinc\Code\Github\itdepartment\client\README.md                   | Markdown   |         -3 |          0 |         -1 |         -4 |
+| c:\Users\finkelsteinc\Code\Github\itdepartment\client\package-lock.json           | JSON       |    -17,620 |          0 |         -1 |    -17,621 |
+| c:\Users\finkelsteinc\Code\Github\itdepartment\client\package.json                | JSON       |        -49 |          0 |         -1 |        -50 |
+| c:\Users\finkelsteinc\Code\Github\itdepartment\client\public\README.md            | Markdown   |         -5 |          0 |          0 |         -5 |
+| c:\Users\finkelsteinc\Code\Github\itdepartment\client\public\grassotechItLogo.svg | XML        |         -9 |          0 |         -1 |        -10 |
+| c:\Users\finkelsteinc\Code\Github\itdepartment\client\public\index.html           | HTML       |        -58 |          0 |         -3 |        -61 |
+| c:\Users\finkelsteinc\Code\Github\itdepartment\client\public\manifest.json        | JSON       |        -20 |          0 |         -1 |        -21 |
+| Total                                                                             |            |    -17,765 |          0 |         -8 |    -17,773 |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
