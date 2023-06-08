@@ -5,6 +5,7 @@
 </div>
 
 [![Node.js CI](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml/badge.svg)](https://github.com/MysticalMike60t/itdepartment/actions/workflows/node.js.yml)
+![s](https://img.shields.io/github/repo-size/mysticalmike60t/itdepartment)
     
 ## Dependencies:
 * [Node JS](https://nodejs.org/en/)
