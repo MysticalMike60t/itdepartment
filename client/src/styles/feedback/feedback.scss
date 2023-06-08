@@ -40,14 +40,12 @@
             width: 80%;
             display: flex;
             left: 0;
-            // top: 37.5px;
             z-index: 2;
             position: relative;
             margin: 10px;
             pointer-events: none;
             .wrapper__label {
                 color: black;
-                // font-size: 0.9em;
                 font-size: 1.5em;
             }
         }

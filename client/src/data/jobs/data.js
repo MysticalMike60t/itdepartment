@@ -9,7 +9,6 @@ const programCardData = [
     {loc: "ncsa", title: "Network and Computer Systems Administrators"},
     {loc: "sd", title: "Software Developers"},
     {loc: "wd", title: "Web Developer"}
-    // {loc: "", title: ""}
 ]
 
 export { programCardData }

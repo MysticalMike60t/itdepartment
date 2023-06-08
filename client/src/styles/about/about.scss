@@ -16,7 +16,6 @@ $nav-width: 25vw;
             top: $header-height;
             padding: 0;
             margin: 0;
-            // background: $dark-1;
             position: fixed;
             z-index: 98;
             border-right: 2px solid rgb(200, 200, 200);
@@ -112,8 +111,6 @@ $nav-width: 25vw;
                 border-radius: 5px;
                 overflow: hidden;
                 cursor: pointer;
-                // outline: 2px solid $primary-1;
-                // animation: outline 2s ease infinite;
                 @keyframes outline {
                     0% {
                         outline-offset: 0;
@@ -242,7 +239,6 @@ $nav-width: 25vw;
                 th {
                     height: auto;
                     font-size: 2rem;
-                    // background: $primary-yellow;
                     color: $primary-1;
                     transition: 100ms ease all;
                     cursor: default;
@@ -320,15 +316,6 @@ $nav-width: 25vw;
                     }
                 }
             }
-            // .learing__seperator {
-            //     width: 90%;
-            //     height: 2px;
-            //     left: 0;
-            //     top: 0;
-            //     border-radius: 10px;
-            //     background: $primary-1;
-            //     position: relative;
-            // }
         }
         .videos {
             .video-grid {

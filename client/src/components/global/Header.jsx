@@ -1,7 +1,6 @@
 import { React } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
-import { motion as m } from "framer-motion"
 
 import BrightnessMediumIcon from '@mui/icons-material/BrightnessMedium';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -11,18 +10,33 @@ import grassotechItLogo from '../../assets/images/logos/grassotechItLogo.svg';
 import hData from "../../data/header/data";
 
 const Header = () => {
+    let prevUrl = undefined;
+
     $(document).ready(function () {
-        if (localStorage.getItem("theme") === "light") {
-            $(".header__container").removeClass("dark");
-        } else {
-            $(".header__container").addClass("dark");
-        }
-        $(".wrapper__settings").unbind().click(function(){
-            window.location.pathname="/settings";
+        setInterval(() => {
+            const currUrl = window.location.href;
+            if (currUrl !== prevUrl) {
+                prevUrl = currUrl;
+                if (localStorage.getItem("theme") === "light") {
+                    $(".header__container").removeClass("dark");
+                } else {
+                    $(".header__container").addClass("dark");
+                }
+            }
+        }, 60);
+        // setInterval(function(){
+        //     if (localStorage.getItem("theme") === "light") {
+        //         $(".header__container").removeClass("dark");
+        //     } else {
+        //         $(".header__container").addClass("dark");
+        //     }
+        // }, 100);
+        $(".wrapper__settings").unbind().click(function () {
+            window.location.pathname = "/settings";
         })
     });
     return (
-        <m.div className="header__container dark" id="header">
+        <div className="header__container dark" id="header">
             <div className="container__logo">
                 <Link to="/" className='logo__link'>
                     <img src={grassotechItLogo} alt="homeLinkImage" />
@@ -47,7 +61,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-        </m.div>
+        </div>
     )
 }
 

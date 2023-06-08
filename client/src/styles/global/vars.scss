@@ -7,7 +7,6 @@ $primary-2: #5386E4;
 $primary-3: #6F58C9;
 $dark-1: rgb(50,50,50);
 $light-1: rgb(240,240,240);
-// $green-1: #59FFA0;
 $green-1: rgba(64, 197, 121, 0.95);
 $green-1-t: rgba(90, 241, 155, 0.705);
 $green-2: #0b4223;
@@ -25,6 +24,6 @@ $header-icon-color: $dark-1;
 $header-icon-color-hover: $primary-1;
 
 $header-width: 75px;
-$header-height: 75px /*50px*/;
+$header-height: 75px;
 $header-zIndex: 99;
 $header-icon-size: 4rem;

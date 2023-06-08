@@ -19,17 +19,17 @@ const Feedback = () => {
             }, (error) => {
                 errMes = error.text;
                 console.log(error.text);
-                $(".incomplete_message").css({display:"flex"});
+                $(".incomplete_message").css({ display: "flex" });
             });
     };
     return (
         <div className="feedback__container container dark">
-            <form ref={form} onSubmit={sendEmail} className='container__form'>
+            <form ref={form} onSubmit={sendEmail} className='container__form' id="feeback_form" name="feedback_form">
                 <h1>Feedback</h1>
                 <div className="form__wrapper">
                     <label className='wrapper__label'>Name</label>
                 </div>
-                <input type="text" name="user_name" className='form__input' required="true"/>
+                <input type="text" name="user_name" className='form__input' required="true" />
                 <div className="form__wrapper">
                     <label className='wrapper__label'>Email</label>
                 </div>
@@ -37,7 +37,7 @@ const Feedback = () => {
                 <div className="form__wrapper">
                     <label className='wrapper__label'>Message</label>
                 </div>
-                <textarea name="message" className='form__textarea'  required={true}/>
+                <textarea name="message" className='form__textarea' required={true} />
                 <input type="submit" value="Send" className='form__submit' />
                 <div className="complete_message">
                     <p>Feedback Sent</p>

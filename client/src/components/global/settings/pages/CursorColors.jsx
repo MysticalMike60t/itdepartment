@@ -22,7 +22,7 @@ const CursorColors = () => {
         $(".dot__info").css({color: "black"});
       }
     },1);
-    if(!localStorage.getItem("cursorColor")) {
+    if(!localStorage.getItem("cursorColor" || localStorage.getItem("cursorColor")==="" || localStorage.getItem("cursorColor")==null)) {
       setCursorColor("#a71624");
       localStorage.setItem("cursorColor", "#a71624");
     }
@@ -44,12 +44,6 @@ const CursorColors = () => {
         <button id="reloadButton">Load new Cursor</button>
         <p className='dot__info'>Use <i><code>CTRL + B</code></i> to reset cursor.</p>
       </div>
-      {/* <div className="wrapper__follow">
-        <div className="follow__frame"></div>
-        <div className="follow__group">
-          <input type="text" className="group__input" id="follow-group_color" />
-        </div>
-      </div> */}
     </div>
   )
 }

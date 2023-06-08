@@ -1,7 +1,7 @@
 import { React } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
-import { motion as m } from "framer-motion"
+import { isMobile } from 'react-device-detect';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
@@ -23,6 +23,15 @@ export const Home = () => {
   let vidOut = vids[Math.floor(Math.random() * 4)];
   let style = { background: "$primary-1" };
   $(document).ready(function () {
+    setInterval(function(){
+      if (localStorage.getItem("theme") === "light") {
+        $(".home__container").removeClass("dark");
+        $(".head__container").removeClass("dark");
+      } else {
+        $(".home__container").addClass("dark");
+        $(".head__container").addClass("dark");
+      }
+    },1000);
     if (localStorage.getItem("theme") === "light") {
       $(".home__container").removeClass("dark");
       $(".head__container").removeClass("dark");
@@ -30,17 +39,24 @@ export const Home = () => {
       $(".home__container").addClass("dark");
       $(".head__container").addClass("dark");
     }
-    $("h2").html(homeHeadTitleData.map((data) => { return (data.subText) }));
-    setInterval(() => {
+    if (window.innerWidth <= 1345) {
+      $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.shortenedText) }));
+    } else {
+      $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.text) }));
+    }
+    $(window).resize(function () {
       if (window.innerWidth <= 1345) {
         $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.shortenedText) }));
       } else {
         $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.text) }));
       }
-    }, 1);
+    });
+    if (isMobile) {
+      $(".wrapper__a").css({ display: "none" });
+    }
   });
   return (
-    <m.div className="home__container container dark" style={style}>
+    <div className="home__container container dark" style={style}>
       <div className="head__container" id="h">
         <div className="container__background">
           <video src={vidOut} type="video/mp4" autoPlay muted loop />
@@ -49,7 +65,7 @@ export const Home = () => {
           <div className="wrapper__title">
             <h1 className="title__h1">_</h1>
           </div>
-          <h2>_</h2>
+          <h2 className='wrapper__h2'>{homeHeadTitleData.map((data) => { return (data.subText) })}</h2>
           <a className='wrapper__a' href="#actions">
             <ArrowDropDownIcon className="a__icon" />
           </a>
@@ -66,14 +82,14 @@ export const Home = () => {
             <div className="wrapper__left">
               {footerLinks_left.map((data, key) => {
                 return (
-                  <a className='left__link' href={data.link}>{data.text}</a>
+                  <a className='left__link' href={data.link} key={key}>{data.text}</a>
                 )
               })}
             </div>
             <div className="wrapper__right">
               {footerLinks_right.map((data, key) => {
                 return (
-                  <a className='right__link' href={data.link}>{data.text}</a>
+                  <a className='right__link' href={data.link} key={key}>{data.text}</a>
                 )
               })}
             </div>
@@ -83,7 +99,7 @@ export const Home = () => {
           </div>
         </footer>
       </div>
-    </m.div>
+    </div>
   )
 }
 

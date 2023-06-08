@@ -9,7 +9,6 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import carpenter from "../../assets/images/CarpenterS-150x150.jpg";
 
 const CarpenterTable = () => {
-    // not currently working correctly
     $(document).ready(function () {
         if ($(".teacher").hover() === true) {
             $(".teacher__notification").css({ opacity: "0", transform: "translateY(50px)" });
