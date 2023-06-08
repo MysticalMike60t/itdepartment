@@ -24,13 +24,6 @@ const Header = () => {
                 }
             }
         }, 60);
-        // setInterval(function(){
-        //     if (localStorage.getItem("theme") === "light") {
-        //         $(".header__container").removeClass("dark");
-        //     } else {
-        //         $(".header__container").addClass("dark");
-        //     }
-        // }, 100);
         $(".wrapper__settings").unbind().click(function () {
             window.location.pathname = "/settings";
         })

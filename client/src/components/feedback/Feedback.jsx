@@ -1,27 +1,46 @@
 import React, { useRef } from 'react'
 import $ from "jquery";
 import emailjs from '@emailjs/browser';
-import { useNavigate } from "react-router-dom";
 
 const Feedback = () => {
-    const navigate = useNavigate();
     const form = useRef();
     let errMes;
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_fta2cg8', 'template_dg7zngu', form.current, 'h9SNBTG1l1E3UEXDy')
-            .then((result) => {
-                console.log(result.text);
-                $(".complete_message").css({display:"flex"});
-                navigate("/");
-            }, (error) => {
-                errMes = error.text;
-                console.log(error.text);
-                $(".incomplete_message").css({ display: "flex" });
-            });
+        if (!localStorage.getItem("ip")) {
+            emailjs.sendForm('service_fta2cg8', 'template_dg7zngu', form.current, 'h9SNBTG1l1E3UEXDy')
+                .then((result) => {
+                    console.log(result.text);
+                    $(".complete_message").css({ display: "flex" });
+                    $.getJSON("https://api.ipify.org?format=json", function (data) {
+                        localStorage.setItem("ip", data.ip);
+                    })
+                }, (error) => {
+                    errMes = error.text;
+                    console.log(error.text);
+                    $(".incomplete_message").css({ display: "flex" });
+                });
+        } else {
+            $(".form__submit").css({ "pointer-events": "none", opacity: "0.1" });
+            return;
+        }
     };
+    $(document).ready(function () {
+        if (!localStorage.getItem("ip")) {
+            return;
+        } else {
+            $(".form__wrapper").remove();
+            $(".form__input").remove();
+            $(".form__textarea").remove();
+            $(".form__submit").remove();
+
+            errMes = "Already Submitted Feedback";
+            $(".incomplete_message").css({ display: "block" });
+            $(".incomplete_message>p").append(errMes);
+        }
+    })
     return (
         <div className="feedback__container container dark">
             <form ref={form} onSubmit={sendEmail} className='container__form' id="feeback_form" name="feedback_form">
