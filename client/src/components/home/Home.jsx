@@ -23,6 +23,15 @@ export const Home = () => {
   let vidOut = vids[Math.floor(Math.random() * 4)];
   let style = { background: "$primary-1" };
   $(document).ready(function () {
+    setInterval(function(){
+      if (localStorage.getItem("theme") === "light") {
+        $(".home__container").removeClass("dark");
+        $(".head__container").removeClass("dark");
+      } else {
+        $(".home__container").addClass("dark");
+        $(".head__container").addClass("dark");
+      }
+    },1000);
     if (localStorage.getItem("theme") === "light") {
       $(".home__container").removeClass("dark");
       $(".head__container").removeClass("dark");

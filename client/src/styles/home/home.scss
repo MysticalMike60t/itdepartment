@@ -157,7 +157,7 @@ $background: $primary-1;
         height: auto;
         left: 0;
         top: 0;
-        background: rgb(25, 25, 25);
+        background: rgb(240, 240, 240);
         position: relative;
         h1 {
             font-size: 1em;
@@ -185,11 +185,12 @@ $background: $primary-1;
                     -ms-border-radius: 10px;
                     -o-border-radius: 10px;
                     text-align: center;
-                    color: white;
-                    background: rgb(35, 35, 35);
+                    color: black;
+                    background: rgb(255, 255, 255);
+                    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.04);
                     position: relative;
                     &:hover {
-                        background: rgba(255, 255, 255, 0.1);
+                        background: rgba(255, 255, 255, 0.5);
                     }
                 }
             }
@@ -227,7 +228,7 @@ $background: $primary-1;
             height: 100px;
             left: 0;
             top: 0;
-            background: rgb(30,30,30);
+            background: rgb(245,245,245);
             position: relative;
             .feedback__link {
                 text-decoration: none;
@@ -239,18 +240,19 @@ $background: $primary-1;
                 -ms-border-radius: 10px;
                 -o-border-radius: 10px;
                 text-align: center;
-                color: white;
+                color: black;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                background: rgb(35, 35, 35);
+                background: rgb(255, 255, 255);
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.04);
                 position: absolute;
                 -webkit-transform: translate(-50%, -50%);
                 -moz-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
                 -o-transform: translate(-50%, -50%);
                 &:hover {
-                    background: rgba(255, 255, 255, 0.1);
+                    background: rgba(255, 255, 255, 0.5);
                 }
             }
         }

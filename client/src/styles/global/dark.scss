@@ -6,8 +6,8 @@
     }
     .container__form {
         color: white;
-        background: rgb(25,25,25);
-        outline: 1px solid rgb(50,50,50);
+        background: rgb(25, 25, 25);
+        outline: 1px solid rgb(50, 50, 50);
         h1 {
             color: white;
         }
@@ -16,17 +16,18 @@
                 color: white;
             }
         }
-        input,textarea {
-            outline: 1px solid rgb(50,50,50);
+        input,
+        textarea {
+            outline: 1px solid rgb(50, 50, 50);
             color: white;
-            background: rgb(35,35,35);
+            background: rgb(35, 35, 35);
         }
         .form__submit {
             color: white;
         }
     }
     .container {
-        background: rgb(35,35,35);
+        background: rgb(35, 35, 35);
     }
     background: rgb(30, 30, 30);
 
@@ -38,14 +39,16 @@
         background: $primary-1-dark;
     }
     .container__navigation {
-        background: rgb(30,30,30);
+        background: rgb(30, 30, 30);
         .navigation__button {
             color: white;
-            background: rgb(35,35,35);
+            background: rgb(35, 35, 35);
             outline: none;
             .setting__wrapper {
-                .wrapper__follow, .wrapper__dot {
-                    .follow__group, .dot__group {
+                .wrapper__follow,
+                .wrapper__dot {
+                    .follow__group,
+                    .dot__group {
                         input {
                             color: white;
                         }
@@ -95,7 +98,21 @@
             }
         }
     }
-
+    #footer {
+        background: rgb(25, 25, 25);
+        .left__link,
+        .right__link {
+            color: white;
+            background: rgb(35, 35, 35);
+        }
+        .footer__feedback {
+            background: rgb(30,30,30);
+            .feedback__link {
+                color: white;
+                background: rgb(35, 35, 35);
+            }
+        }
+    }
     .container__wrapper {
         h1 {
             color: rgb(250, 250, 250);
@@ -167,17 +184,18 @@
         .learning {
             background: rgb(30, 30, 30);
 
-            .cards__card, .card {
+            .cards__card,
+            .card {
                 background: rgb(35, 35, 35);
                 color: rgb(220, 220, 220);
                 line-height: 30px;
             }
             .display {
                 .item {
-                    background: rgb(35,35,35);
+                    background: rgb(35, 35, 35);
                     color: white;
                     .text {
-                        color: rgb(200,200,200);
+                        color: rgb(200, 200, 200);
                     }
                 }
             }
