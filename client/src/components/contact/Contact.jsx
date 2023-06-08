@@ -4,7 +4,7 @@ import $ from "jquery";
 import ContactInfo from './modules/ContactInfo';
 
 const Contact = () => {
-  $(document).ready(function() {
+  $(document).ready(function () {
     if (localStorage.getItem("theme") === "light") {
       $(".contact__container").removeClass("dark");
     } else {
