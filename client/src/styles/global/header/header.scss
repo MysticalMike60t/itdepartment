@@ -17,13 +17,13 @@ $header-background: rgb(240, 240, 240);
     &:hover {
         backdrop-filter: blur(5px) brightness(80%);
     }
-    .container__ul {
+    ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style: none;
         position: relative;
-        .nav__ul {
+        div {
             display: inline-block;
             li {
                 display: inline-block;

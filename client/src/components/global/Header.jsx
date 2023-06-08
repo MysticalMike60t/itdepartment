@@ -35,21 +35,21 @@ const Header = () => {
                     <img src={grassotechItLogo} alt="homeLinkImage" />
                 </Link>
             </div>
-            <div className='container__ul'>
-                <ul className='nav__ul'>
+            <ul className='container__ul'>
+                <div>
                     {hData.map((data, key) => {
                         return (
                             <li key={key}><Link to={data.link} className="ul__link" key={key}><span className="material-symbols-outlined icon">{data.icon}</span><div>{data.text}</div></Link></li>
                         );
                     })}
-                </ul>
-            </div>
+                </div>
+            </ul>
             <div className="header__actions">
                 <div className="actions__wrapper">
-                    <button className="wrapper__theme" name="Change Theme">
+                    <button className="wrapper__theme">
                         <BrightnessMediumIcon className='theme__icon' />
                     </button>
-                    <button className="wrapper__settings" name="Settings">
+                    <button className="wrapper__settings">
                         <SettingsIcon className='settings__icon' />
                     </button>
                 </div>
