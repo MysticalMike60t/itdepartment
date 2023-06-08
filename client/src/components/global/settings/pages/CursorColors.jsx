@@ -22,7 +22,7 @@ const CursorColors = () => {
         $(".dot__info").css({color: "black"});
       }
     },1);
-    if(!localStorage.getItem("cursorColor")) {
+    if(!localStorage.getItem("cursorColor" || localStorage.getItem("cursorColor")==="" || localStorage.getItem("cursorColor")==null)) {
       setCursorColor("#a71624");
       localStorage.setItem("cursorColor", "#a71624");
     }

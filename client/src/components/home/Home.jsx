@@ -1,4 +1,4 @@
-import { React } from 'react'
+import { React, useState } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
@@ -13,6 +13,7 @@ import bgVideo003 from "../../assets/videos/production ID_4167404.mp4";
 import bgVideo004 from "../../assets/videos/video.mp4";
 
 export const Home = () => {
+  let [cursorColor, setCursorColor] = useState('');
   const vids = [
     bgVideo001,
     bgVideo002,
@@ -29,7 +30,6 @@ export const Home = () => {
       $(".home__container").addClass("dark");
       $(".head__container").addClass("dark");
     }
-    $("h2").html(homeHeadTitleData.map((data) => { return (data.subText) }));
     setInterval(() => {
       if (window.innerWidth <= 1345) {
         $(".title__h1").html(homeHeadTitleData.map((data) => { return (data.shortenedText) }));
@@ -48,7 +48,7 @@ export const Home = () => {
           <div className="wrapper__title">
             <h1 className="title__h1">_</h1>
           </div>
-          <h2>_</h2>
+          <h2 className='wrapper__h2'>{homeHeadTitleData.map((data) => { return (data.subText) })}</h2>
           <a className='wrapper__a' href="#actions">
             <ArrowDropDownIcon className="a__icon" />
           </a>
