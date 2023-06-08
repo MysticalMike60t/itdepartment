@@ -47,6 +47,7 @@ const Layout = () => {
     if (currUrl !== prevUrl) {
       prevUrl = currUrl;
       // console.log(`URL changed to : ${currUrl}`);
+      setTheme(localStorage.getItem("theme"));
       cursor_change();
     }
   }, 60);
