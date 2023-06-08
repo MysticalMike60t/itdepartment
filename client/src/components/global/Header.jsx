@@ -1,7 +1,6 @@
 import { React } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
-import { motion as m } from "framer-motion"
 
 import BrightnessMediumIcon from '@mui/icons-material/BrightnessMedium';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -22,7 +21,7 @@ const Header = () => {
         })
     });
     return (
-        <m.div className="header__container dark" id="header">
+        <div className="header__container dark" id="header">
             <div className="container__logo">
                 <Link to="/" className='logo__link'>
                     <img src={grassotechItLogo} alt="homeLinkImage" />
@@ -47,7 +46,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-        </m.div>
+        </div>
     )
 }
 

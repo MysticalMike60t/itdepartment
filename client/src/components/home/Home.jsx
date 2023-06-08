@@ -1,7 +1,6 @@
 import { React } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
-import { motion as m } from "framer-motion"
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
@@ -40,7 +39,7 @@ export const Home = () => {
     }, 1);
   });
   return (
-    <m.div className="home__container container dark" style={style}>
+    <div className="home__container container dark" style={style}>
       <div className="head__container" id="h">
         <div className="container__background">
           <video src={vidOut} type="video/mp4" autoPlay muted loop />
@@ -83,7 +82,7 @@ export const Home = () => {
           </div>
         </footer>
       </div>
-    </m.div>
+    </div>
   )
 }
 

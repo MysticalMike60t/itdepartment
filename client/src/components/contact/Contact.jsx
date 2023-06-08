@@ -1,6 +1,5 @@
 import React from 'react'
 import $ from "jquery";
-import { motion as m } from "framer-motion"
 
 import ContactInfo from './modules/ContactInfo';
 
@@ -13,9 +12,9 @@ const Contact = () => {
     }
   });
   return (
-    <m.div className="contact__container container dark">
+    <div className="contact__container container dark">
       <ContactInfo />
-    </m.div>
+    </div>
   )
 }
 
