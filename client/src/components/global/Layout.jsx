@@ -6,6 +6,8 @@ import { isMobile } from 'react-device-detect';
 import Header from './Header'
 
 const Layout = () => {
+  var first_visit = false;
+
   let prevUrl = undefined;
 
   const default_cursor_color = localStorage.getItem("cursorColor");
@@ -13,10 +15,8 @@ const Layout = () => {
 
   const cursor_hover = { filter: "hue-rotate(210deg) brightness(300%)" };
 
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState();
 
-
-  var first_visit = false;
   const checkFirstVisit = () => {
     if (localStorage.getItem('was_visited')) {
       return;

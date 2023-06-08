@@ -10,14 +10,29 @@ import grassotechItLogo from '../../assets/images/logos/grassotechItLogo.svg';
 import hData from "../../data/header/data";
 
 const Header = () => {
+    let prevUrl = undefined;
+
     $(document).ready(function () {
-        if (localStorage.getItem("theme") === "light") {
-            $(".header__container").removeClass("dark");
-        } else {
-            $(".header__container").addClass("dark");
-        }
-        $(".wrapper__settings").unbind().click(function(){
-            window.location.pathname="/settings";
+        setInterval(() => {
+            const currUrl = window.location.href;
+            if (currUrl !== prevUrl) {
+                prevUrl = currUrl;
+                if (localStorage.getItem("theme") === "light") {
+                    $(".header__container").removeClass("dark");
+                } else {
+                    $(".header__container").addClass("dark");
+                }
+            }
+        }, 60);
+        // setInterval(function(){
+        //     if (localStorage.getItem("theme") === "light") {
+        //         $(".header__container").removeClass("dark");
+        //     } else {
+        //         $(".header__container").addClass("dark");
+        //     }
+        // }, 100);
+        $(".wrapper__settings").unbind().click(function () {
+            window.location.pathname = "/settings";
         })
     });
     return (
