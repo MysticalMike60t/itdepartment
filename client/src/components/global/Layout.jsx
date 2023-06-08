@@ -8,7 +8,7 @@ import Header from './Header'
 import homeHeadTitleData from "../../data/home/head/data";
 
 const Layout = () => {
-  var first_visit = false;
+  // var first_visit = false;
 
   let prevUrl = undefined;
 
@@ -23,7 +23,7 @@ const Layout = () => {
     if (localStorage.getItem('was_visited')) {
       return;
     }
-    first_visit = true;
+    // first_visit = true;
     localStorage.setItem("theme", "dark");
     localStorage.setItem('was_visited', 1);
   }

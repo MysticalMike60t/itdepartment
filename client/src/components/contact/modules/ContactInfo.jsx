@@ -25,9 +25,6 @@ const Contacts = () => {
   let aTextSub;
   let arText = "Area:";
   let arTextSub;
-  const show = (item) => {
-    alert(item);
-  }
   if (window.innerWidth <= 500) {
     pTextSub = pText.substring(0, pText.length - 1);
     eTextSub = eText.substring(0, eText.length - 1);
