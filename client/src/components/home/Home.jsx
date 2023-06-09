@@ -22,6 +22,9 @@ export const Home = () => {
   ]
   let vidOut = vids[Math.floor(Math.random() * 4)];
   let style = { background: "$primary-1" };
+  if(isMobile) {
+    vidOut = null;
+  }
   $(document).ready(function () {
     setInterval(function () {
       if (localStorage.getItem("theme") === "light") {
