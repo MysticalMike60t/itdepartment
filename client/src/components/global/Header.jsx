@@ -46,10 +46,10 @@ const Header = () => {
             </div>
             <div className="header__actions">
                 <div className="actions__wrapper">
-                    <button className="wrapper__theme" name="changeTheme">
+                    <button className="wrapper__theme" name="changeTheme" aria-label="Change Theme">
                         <BrightnessMediumIcon className='theme__icon' />
                     </button>
-                    <button className="wrapper__settings" name="settings">
+                    <button className="wrapper__settings" name="settings" aria-label="Settings">
                         <SettingsIcon className='settings__icon' />
                     </button>
                 </div>
