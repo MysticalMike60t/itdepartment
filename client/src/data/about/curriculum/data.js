@@ -1,8 +1,8 @@
 const items = [
-    {credits: "3", subject: "Exploratory and Introduction to Information Technology"},
-    {credits: "3", subject: "Intermediate Software Applications"},
-    {credits: "3", subject: "Web Design and Introduction to Networking"},
-    {credits: "3", subject: "Advanced Programming and Technical Skills"}
+    {credits: "3", subject: "Exploratory and Introduction to Information Technology", year: "9"},
+    {credits: "3", subject: "Intermediate Software Applications", year: "10"},
+    {credits: "3", subject: "Web Design and Introduction to Networking", year: "11"},
+    {credits: "3", subject: "Advanced Programming and Technical Skills", year: "12"}
 ]
 const cards = [
     {title: "Exploratory and Introduction to Information Technology", grade: "9",  text: "Students deciding to enter the field of Information Technology are introduced to basic concepts of computer hardware and software. Instruction is provided in Microsoft Office (Word, Excel, Access and PowerPoint) and students demonstrate beginner skills in these programs. Students will be introduced to the basics of safety, as well as equipment identification and use. The introduction to computer hardware includes knowledge of computer components and computer accessories."},

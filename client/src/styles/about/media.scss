@@ -72,3 +72,10 @@
         }
     }
 }
+@media screen and (max-width: 465px) {
+    .instance {
+        .display-credits {
+            flex-wrap: wrap;
+        }
+    }
+}
