@@ -46,10 +46,10 @@ const Header = () => {
             </div>
             <div className="header__actions">
                 <div className="actions__wrapper">
-                    <button className="wrapper__theme" name="Change Theme">
+                    <button className="wrapper__theme" name="changeTheme">
                         <BrightnessMediumIcon className='theme__icon' />
                     </button>
-                    <button className="wrapper__settings" name="Settings">
+                    <button className="wrapper__settings" name="settings">
                         <SettingsIcon className='settings__icon' />
                     </button>
                 </div>
