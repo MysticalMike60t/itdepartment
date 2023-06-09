@@ -35,7 +35,7 @@ const Header = () => {
                     <img src={grassotechItLogo} alt="homeLinkImage" />
                 </Link>
             </div>
-            <div className='container__ul'>
+            <div className='container__nav'>
                 <ul className='nav__ul'>
                     {hData.map((data, key) => {
                         return (
