@@ -9,7 +9,7 @@ const CarpenterInfo = () => {
     <div className="teacherInfo-wrapper instance">
         <h1>{carpenter.map((data)=>{return(data.name)})}</h1>
         <div className="teacher info" style={{pointerEvents: "none"}}>
-            <img src={carpenterImg} alt="" />
+            <img src={carpenterImg} alt="" loading="lazy"/>
         </div>
         <p>
             <h2>{carpenter.map((data)=>{return(data.position)})}</h2>

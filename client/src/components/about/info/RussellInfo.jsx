@@ -18,7 +18,7 @@ const RussellInfo = () => {
     <div className="teacherInfo-wrapper instance">
         <h1>{russell.map((data)=>{return(data.name)})}</h1>
         <div className="teacher info" style={{pointerEvents: "none"}}>
-            <img src={russellImg} alt="" />
+            <img src={russellImg} alt="" loading="lazy"/>
         </div>
         <p>
             <h2>{russell.map((data)=>{return(data.position)})}</h2>

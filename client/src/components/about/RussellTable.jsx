@@ -25,7 +25,7 @@ const RussellTable = () => {
                 <div className="hover">
                     Steve Russell
                 </div>
-                <img src={russell} alt="" />
+                <img src={russell} alt="" loading="lazy"/>
             </Link>
             <h2>Students</h2>
             <table>
