@@ -29,7 +29,7 @@ const CarpenterTable = () => {
                 <div className="hover">
                     Mr. Carpenter
                 </div>
-                <img src={carpenter} alt="" />
+                <img src={carpenter} alt="" loading="lazy"/>
             </Link>
             <h2>Students</h2>
             <table>

@@ -32,7 +32,7 @@ const Header = () => {
         <div className="header__container dark" id="header">
             <div className="container__logo">
                 <Link to="/" className='logo__link'>
-                    <img src={grassotechItLogo} alt="homeLinkImage" />
+                    <img src={grassotechItLogo} alt="homeLinkImage" loading="lazy"/>
                 </Link>
             </div>
             <div className='container__nav'>
