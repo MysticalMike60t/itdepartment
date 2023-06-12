@@ -53,10 +53,13 @@ function App() {
     try {
       console.clear();
       console.log("Working!");
+      localStorage.setItem("status", "working");
     } catch (e) {
       console.log(e);
+      localStorage.setItem("status", e);
     }
     console.log("First visit? " + first_visit);
+    console.clear();
     checkFirstVisit();
     for (let i; i < 1; i++) {
       window.location.reload();

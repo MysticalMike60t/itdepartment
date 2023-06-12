@@ -16,8 +16,14 @@
                 color: white;
             }
         }
-        input,
+        input[type="text"],
+        input[type="email"],
         textarea {
+            outline: 1px solid rgb(50, 50, 50);
+            color: white;
+            background: rgb(35, 35, 35);
+        }
+        input[type="submit"] {
             outline: 1px solid rgb(50, 50, 50);
             color: white;
             background: rgb(35, 35, 35);
@@ -106,7 +112,7 @@
             background: rgb(35, 35, 35);
         }
         .footer__feedback {
-            background: rgb(30,30,30);
+            background: rgb(30, 30, 30);
             .feedback__link {
                 color: white;
                 background: rgb(35, 35, 35);
