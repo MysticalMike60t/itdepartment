@@ -49,7 +49,15 @@
                 font-size: 1.5em;
             }
         }
-        input,textarea {
+        input[type="text"],input[type="email"],textarea {
+            outline: 1px solid rgb(175,175,175);
+            color: black;
+            background: rgb(255,255,255);
+            &:focus {
+                outline: 1px solid $primary-1;
+            }
+        }
+        input[type="submit"] {
             outline: 1px solid rgb(175,175,175);
             color: black;
             background: rgb(255,255,255);

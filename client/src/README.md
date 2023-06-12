@@ -1,6 +1,4 @@
-# Main client files
+# ```/client/src/```
 
-## `index.js` is the main file.
-
-### Unused folders/files in this directory:
-> theme
+## Main client files
+#### `index.js` is the main file inside the website. It processes everything before the app is loaded, and processes the app (```app.js```).
