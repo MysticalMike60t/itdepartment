@@ -2,15 +2,8 @@ import React from 'react';
 import { Route, Routes, useLocation } from "react-router-dom";
 import $ from "jquery";
 
-import NoPage from './components/global/NoPage';
-import Layout from './components/global/Layout';
-
-import Home from './components/home/Home';
-import Contact from './components/contact/Contact';
-import Jobs from './components/jobs/Jobs';
-import About from "./components/about/About";
-import Feedback from './components/feedback/Feedback';
-import Settings from './components/global/Settings';
+import { Layout, NoPage, Settings } from "./components/global"
+import { Home, Jobs, Feedback, Contact, About } from "./components"
 import CursorColors from './components/global/settings/pages/CursorColors';
 import Cirs from './components/jobs/pages/Cirs';
 import Cna from "./components/jobs/pages/Cna";
