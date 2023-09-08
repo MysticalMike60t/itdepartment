@@ -1,48 +1,50 @@
-import React from 'react';
+import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import $ from "jquery";
 
-import { Layout, NoPage, Settings } from "./components/global"
-import { Home, Jobs, Feedback, Contact, About } from "./components"
-import CursorColors from './components/global/settings/pages/CursorColors';
-import Cirs from './components/jobs/pages/Cirs';
-import Cna from "./components/jobs/pages/Cna";
-import Cp from "./components/jobs/pages/Cp";
-import Css from "./components/jobs/pages/Css";
-import Csa from "./components/jobs/pages/Csa";
-import Da from "./components/jobs/pages/Da";
-import Isa from "./components/jobs/pages/Isa";
-import Ncsa from "./components/jobs/pages/Ncsa";
-import Sd from "./components/jobs/pages/Sd";
-import Wd from "./components/jobs/pages/Wd";
-import RussellTable from './components/about/RussellTable';
-import CarpenterTable from './components/about/CarpenterTable';
+import { Layout, NoPage, Settings } from "./components/global";
+import { Home, Jobs, Feedback, Contact, About } from "./components";
+import CursorColors from "./components/global/settings/pages/CursorColors";
+import {
+  Cirs,
+  Cna,
+  Cp,
+  Css,
+  Csa,
+  Da,
+  Isa,
+  Ncsa,
+  Sd,
+  Wd,
+} from "./components/jobs/pages";
+import RussellTable from "./components/about/RussellTable";
+import CarpenterTable from "./components/about/CarpenterTable";
 import RussellInfo from "./components/about/info/RussellInfo";
 import CarpenterInfo from "./components/about/info/CarpenterInfo";
 import Uniforms from "./components/about/info/Uniforms";
 import Curriculum from "./components/about/info/Curriculum";
-import Videos from './components/about/info/Videos';
+import Videos from "./components/about/info/Videos";
 
-import './styles/global/uni.scss';
+import "./styles/global/uni.scss";
 
 function App() {
   var first_visit = false;
   const location = useLocation();
   const checkFirstVisit = () => {
-    if (localStorage.getItem('was_visited')) {
+    if (localStorage.getItem("was_visited")) {
       return;
     }
     first_visit = true;
     localStorage.setItem("theme", "dark");
-    localStorage.setItem('was_visited', 1);
-  }
+    localStorage.setItem("was_visited", 1);
+  };
   $(document).ready(function () {
     document.onkeyup = function (e) {
       if (e.ctrlKey && e.which === 66) {
         localStorage.setItem("cursorColor", "#a71624");
         window.location.reload();
       }
-    }
+    };
     try {
       console.clear();
       console.log("Working!");
@@ -78,7 +80,16 @@ function App() {
             <Route path="wd" element={<Wd />} />
           </Route>
           <Route path="info" element={<About />} key={location.pathname}>
-            <Route index element={<><div className="instance"><h1>Click a button to navigate</h1></div></>} />
+            <Route
+              index
+              element={
+                <>
+                  <div className="instance">
+                    <h1>Click a button to navigate</h1>
+                  </div>
+                </>
+              }
+            />
             <Route path="russell">
               <Route index element={<RussellTable />} />
               <Route path="teacher" element={<RussellInfo />} />
