@@ -1,12 +1,15 @@
 $nav-width: 25vw;
+
 .aboutContainer {
     background: rgb(250, 250, 250);
+
     .teachers-wrapper {
         display: flex;
         justify-content: left;
         flex-direction: row;
         align-items: top;
         position: relative;
+
         .nav {
             flex-direction: column;
             display: flex;
@@ -21,12 +24,15 @@ $nav-width: 25vw;
             border-right: 2px solid rgb(200, 200, 200);
             overflow-y: auto;
             overflow-x: hidden;
+
             &::-webkit-scrollbar {
                 height: 4px;
             }
+
             &::-webkit-scrollbar-thumb {
                 background: $primary-1;
             }
+
             .t-btn {
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
                 $margin: 10px;
@@ -48,16 +54,19 @@ $nav-width: 25vw;
                 margin: $margin;
                 transition: 100ms ease all;
                 background: white;
+
                 &:hover {
                     $color: $primary-1;
                     outline: 2px solid $color;
                     color: $color;
                 }
+
                 &:nth-child(1) {
                     margin-top: 20px;
                 }
             }
         }
+
         .instance {
             display: flex;
             align-items: center;
@@ -70,6 +79,7 @@ $nav-width: 25vw;
             padding: 5vh 0 0 0;
             margin: 0;
             position: relative;
+
             .teacher__notification {
                 display: flex;
                 align-items: center;
@@ -83,12 +93,14 @@ $nav-width: 25vw;
                 opacity: 1;
                 transform: translateY(50px);
                 transition: 100ms ease all;
+
                 .notification__p {
                     font-size: 1em;
                     top: 20px;
                     position: relative;
                     transition: 100ms ease all;
                 }
+
                 .notification__arrow {
                     opacity: 0;
                     color: $front-txt-color;
@@ -101,6 +113,7 @@ $nav-width: 25vw;
                     transition: 100ms ease all;
                 }
             }
+
             .teacher {
                 min-height: 150px;
                 display: flex;
@@ -111,26 +124,32 @@ $nav-width: 25vw;
                 border-radius: 5px;
                 overflow: hidden;
                 cursor: pointer;
+
                 @keyframes outline {
                     0% {
                         outline-offset: 0;
                     }
+
                     50% {
                         outline-offset: 20px;
                         border-radius: 0;
                     }
+
                     100% {
                         outline-offset: 0;
                     }
                 }
+
                 &:hover {
                     div {
                         opacity: 1;
                     }
+
                     &::after {
                         opacity: 1;
                     }
                 }
+
                 &::after {
                     content: "";
                     display: block;
@@ -143,6 +162,7 @@ $nav-width: 25vw;
                     position: absolute;
                     transition: 100ms ease all;
                 }
+
                 .hover {
                     display: block;
                     opacity: 0;
@@ -151,11 +171,13 @@ $nav-width: 25vw;
                     pointer-events: none;
                     transition: 100ms ease all;
                 }
+
                 img {
                     width: 150px;
                     height: 150px;
                 }
             }
+
             h2 {
                 padding: 20px;
                 height: auto;
@@ -163,21 +185,25 @@ $nav-width: 25vw;
                 top: 0;
                 position: relative;
             }
+
             table {
                 width: 90%;
                 border-radius: 10px;
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
                 background: rgb(255, 255, 255);
                 position: relative;
+
                 tr {
                     th {
                         padding: 10px;
+
                         sup {
                             .i {
                                 padding: 2.5px;
                             }
                         }
                     }
+
                     td {
                         text-align: center;
                         padding: 5px 10px 10px 10px;
@@ -185,14 +211,17 @@ $nav-width: 25vw;
                 }
             }
         }
+
         .learning {
             height: auto;
             background: rgb(250, 250, 250);
             padding-bottom: 50px;
+
             h1 {
                 font-size: 3rem;
                 color: $primary-1;
             }
+
             .card {
                 color: $primary-1-dark;
                 $padding: 20px;
@@ -204,23 +233,28 @@ $nav-width: 25vw;
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
                 background: rgb(255, 255, 255);
                 position: relative;
+
                 h1 {
                     color: $primary-1;
                     font-size: 1.5rem;
+
                     span {
                         color: $primary-yellow;
                     }
                 }
+
                 p {
                     font-weight: 500;
                     font-size: 1.2rem;
                     margin-top: 3%;
                 }
             }
+
             .card.last {
                 box-shadow: none;
                 background: none;
                 position: relative;
+
                 &::after {
                     width: 100%;
                     height: 10px;
@@ -230,12 +264,14 @@ $nav-width: 25vw;
                     position: absolute;
                 }
             }
+
             table {
                 $padding: 20px;
                 width: calc(90% - ($padding * 2));
                 margin-top: 10vh;
                 padding: $padding;
                 border-collapse: collapse;
+
                 th {
                     height: auto;
                     font-size: 2rem;
@@ -243,20 +279,24 @@ $nav-width: 25vw;
                     transition: 100ms ease all;
                     cursor: default;
                     border-right: 1px solid rgba(0, 0, 0, 0.2);
+
                     &:last-child {
                         border-right: none;
                     }
                 }
+
                 td {
                     $bc: rgba(0, 0, 0, 0.2);
                     font-size: 1rem;
                     border-top: 1px solid $bc;
                     border-right: 1px solid $bc;
+
                     &:nth-child(4) {
                         border-right: none;
                     }
                 }
             }
+
             .display {
                 $padding: 20px;
                 display: flex !important;
@@ -268,9 +308,11 @@ $nav-width: 25vw;
                 padding: $padding;
                 border-radius: 10px;
                 position: relative;
+
                 &.display-credits {
                     margin-top: 50px;
                 }
+
                 .item {
                     display: flex;
                     align-items: center;
@@ -283,35 +325,43 @@ $nav-width: 25vw;
                     background: rgb(250, 250, 250);
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                     border-radius: 10px;
+
                     span {
                         font-size: 2em;
                     }
+
                     .text {
                         font-size: 0.9em;
                         margin-top: 20px;
                         bottom: 0;
                         position: relative;
                     }
+
                     .subject {
                         font-size: 1em;
                     }
+
                     .year {
                         margin-top: 5px;
                         font-size: 1.5em;
+
                         .year__y {
                             font-size: 0.5em;
                             padding: 5px;
                         }
                     }
                 }
+
                 .item-subject {
                     width: auto;
                     padding-bottom: 30px;
+
                     .grade {
                         width: auto;
                         font-size: 0.8em;
                         margin: 0 0 15px 0;
                         position: relative;
+
                         &::after {
                             content: "";
                             width: 100%;
@@ -325,6 +375,7 @@ $nav-width: 25vw;
                 }
             }
         }
+
         .videos {
             .video-grid {
                 display: flex;
@@ -334,18 +385,20 @@ $nav-width: 25vw;
                 height: auto;
                 position: relative;
                 padding-bottom: 50px;
+
                 video {
                     padding: 20px;
                     margin-top: 50px;
                     width: 80%;
                     height: auto;
                     position: relative;
-                    border-radius: 50px;
+                    border-radius: 30px;
                 }
             }
         }
     }
 }
+
 @import "teacherinfo.scss";
 @import "uniforms.scss";
 @import "media.scss";

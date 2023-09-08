@@ -1,14 +1,13 @@
 import React from 'react'
-import video1 from "../../../videos/Burdo_OBern-Beat-reporting-IT.mp4";
-import video2 from "../../../videos/Open-House-IT.mp4";
+import { interview1Video, openHouseVideo } from '../../../assets/videos'
 
 const Videos = () => {
   return (
     <div className="instance videos">
         <h1>Videos</h1>
         <div className="video-grid">
-            <video src={video1} type="video/mp4" autoPlay muted loop controls/>
-            <video src={video2} type="video/mp4" autoPlay muted loop controls/>
+            <video src={interview1Video} type="video/mp4" autoPlay muted loop controls/>
+            <video src={openHouseVideo} type="video/mp4" autoPlay muted loop controls/>
         </div>
     </div>
   )
